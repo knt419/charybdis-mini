@@ -1,0 +1,12 @@
+file_format: "1"
+id: chary
+name: Chary
+type: shield
+url: https://github.com/jimmerricks/swoop
+requires: [pro_micro]
+features:
+  - keys
+  - pointer
+siblings:
+  - chary_left
+  - chary_right
