@@ -4,7 +4,7 @@
 if SHIELD_CHARY_RIGHT
 
 config ZMK_KEYBOARD_NAME
-    default "Chary"
+    default "Charybdis mini"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
