@@ -10,11 +10,7 @@
 #define POINTER  3
 
 
-
 / {
-    
-
-    
 
     keymap {
         compatible = "zmk,keymap";
@@ -22,43 +18,43 @@
         default_layer {
             label = "DEFAULT";
             bindings = <
-            &kp ESC       &kp Q    &kp W       &kp E         &kp R      &kp T              &kp Y          &kp U      &kp I      &kp O      &kp P       &kp PSCRN
-            &mt LCTRL TAB &kp A    &kp S       &kp D         &kp F      &kp G              &kp H          &kp J      &kp K      &kp L      &kp SEMI    &kp SQT
-            &kp LSHFT     &kp Z    &kp X       &kp C         &kp V      &kp B              &kp N          &kp M      &kp COMMA  &kp DOT    &kp FSLH    &kp BSLH
-                                       &mkp LCLK  &mt LSHFT SPACE  &lt 2 LALT              &kp BACKSPACE  &lt 1 RETURN  
+              &kp       Q  &kp       W  &kp        E  &kp        R  &kp T        &kp Y  &kp        U  &kp        I  &kp       O  &kp               P  
+              &hml LGUI A  &hml LALT S  &hml LCTRL D  &hml LSHFT F  &kp G        &kp H  &hml RSHFT J  &hml RCTRL K  &hml RALT L  &hml RGUI SEMICOLON  
+              &lt   POI Z  &kp       X  &kp        C  &kp        V  &kp B        &kp N  &kp        M  &kp    COMMA  &kp     DOT  &lt POI SLASH
+                                        &lt MED ESC  &lt NAV SPACE  &sl NUFU     &kp ENTER &sl SYM
             >;
         };
         
         number_layer {
             label = "NUMBER";
             bindings = <
-            &kp ESC       &kp F1       &kp F2        &kp F3        &kp F4      &kp F5           &kp F6    &kp F7    &kp F8   &kp F9     &kp F10     &kp BSPC
-            &mt LCTRL TAB &kp LPAR     &kp UNDER     &kp MINUS     &kp EQUAL   &kp PLUS         &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT  &kp RPAR    &kp RETURN
-            &kp LSHFT     &kp N1       &kp N2        &kp N3        &kp N4      &kp N5           &kp N6    &kp N7    &kp N8   &kp N9     &kp N0      &kp BSLH
-                                         &kp LANG2       &mt LSHFT SPACE       &kp LANG1        &none     &lt 1 RETURN
+              &kp       Q  &kp       W  &kp        E  &kp        R  &kp T        &kp Y  &kp        U  &kp        I  &kp       O  &kp               P  
+              &hml LGUI A  &hml LALT S  &hml LCTRL D  &hml LSHFT F  &kp G        &kp H  &hml RSHFT J  &hml RCTRL K  &hml RALT L  &hml RGUI SEMICOLON  
+              &lt   POI Z  &kp       X  &kp        C  &kp        V  &kp B        &kp N  &kp        M  &kp    COMMA  &kp     DOT  &lt POI SLASH
+                                        &lt MED ESC  &lt NAV SPACE  &sl NUFU     &kp ENTER &sl SYM
             >;
         };
 
         sys_layer {
             label = "SYS";
             bindings = <
-            &bt BT_SEL 1  &kp F10  &kp F11  &kp F12 &none &bt BT_CLR                &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &none    &bt BT_CLR
-            &sys_reset    &kp F7   &kp F8   &kp F9 &none  &out OUT_USB              &out OUT_USB  &none         &none         &none         &none    &sys_reset
-            &none         &kp F4   &kp F5   &kp F6 &none  &out OUT_BLE              &out OUT_BLE  &none         &none         &none         &none     &none
-                                &mkp LCLK  &mt LSHFT SPACE  &lt 2 LALT              &kp BACKSPACE  &lt 1 RETURN
+              &kp       Q  &kp       W  &kp        E  &kp        R  &kp T        &kp Y  &kp        U  &kp        I  &kp       O  &kp               P  
+              &hml LGUI A  &hml LALT S  &hml LCTRL D  &hml LSHFT F  &kp G        &kp H  &hml RSHFT J  &hml RCTRL K  &hml RALT L  &hml RGUI SEMICOLON  
+              &lt   POI Z  &kp       X  &kp        C  &kp        V  &kp B        &kp N  &kp        M  &kp    COMMA  &kp     DOT  &lt POI SLASH
+                                        &lt MED ESC  &lt NAV SPACE  &sl NUFU     &kp ENTER &sl SYM
             >;
         }; 
 
         pointer_layer {
             label = "POINTER";
             bindings = <
-            &kp ESC       &kp Q    &kp W       &kp E         &kp R      &kp T              &kp Y          &kp U      &kp I      &kp O      &kp P       &kp PSCRN
-            &mt LCTRL TAB &kp A    &kp S       &kp D         &kp F      &kp G              &kp H          &kp J      &kp K      &kp L      &kp SEMI    &kp SQT
-            &kp LSHFT     &kp Z    &kp X       &kp C         &kp V      &kp B              &kp N          &kp M      &kp COMMA  &kp DOT    &kp FSLH    &kp BSLH
-                                       &mkp LCLK  &mt LSHFT SPACE  &lt 2 LALT              &kp BACKSPACE  &lt 1 RETURN  
-                       
+              &kp       Q  &kp       W  &kp        E  &kp        R  &kp T        &kp Y  &kp        U  &kp        I  &kp       O  &kp               P  
+              &hml LGUI A  &hml LALT S  &hml LCTRL D  &hml LSHFT F  &kp G        &kp H  &hml RSHFT J  &hml RCTRL K  &hml RALT L  &hml RGUI SEMICOLON  
+              &lt   POI Z  &kp       X  &kp        C  &kp        V  &kp B        &kp N  &kp        M  &kp    COMMA  &kp     DOT  &lt POI SLASH
+                                        &lt MED ESC  &lt NAV SPACE  &sl NUFU     &kp ENTER &sl SYM
             >;
         };
 
     };
+
 };
