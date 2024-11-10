@@ -25,6 +25,7 @@
         td1: tap_dance_1 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
+            tapping-term-ms = <300>;
             bindings = <&mt LGUI LANG1>, <&lt 3 LANG2>;
         };
     };
@@ -85,9 +86,9 @@
         scroll_layer {
             label = "SCROLL";
             bindings = <
-            &trans        &trans       &trans       &trans      &trans          &trans             &trans          &trans     &trans       &trans       &trans      &trans
-            &trans        &trans       &trans       &trans      &trans          &trans             &trans          &trans     &trans       &trans       &trans      &trans
-            &trans        &trans       &trans       &trans      &trans          &trans             &trans          &trans     &trans       &trans       &trans      &trans
+            &trans        &trans       &trans       &trans      &trans          &trans             &trans          &trans       &trans       &trans       &trans      &trans
+            &trans        &trans       &trans       &trans      &trans          &trans             &trans          &trans       &trans       &trans       &trans      &trans
+            &trans        &trans       &trans       &trans      &trans          &trans             &trans          &trans       &trans       &trans       &trans      &trans
                                                     &trans      &trans          &trans             &trans          &trans
             >;
         };
