@@ -48,18 +48,12 @@
         dbl_shft: dbl_shft {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings
-                = <&macro_tap LSHFT>
-                , <&macro_tap LSHFT>
-            ;
+            bindings = <&macro_tap LSHFT LSHFT>;
         };
         dbl_ctrl: dbl_ctrl {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings
-                = <&macro_tap LCTRL>
-                , <&macro_tap LCTRL>
-            ;
+            bindings = <&macro_tap LCTRL LCTRL>;
         };
     };
 
