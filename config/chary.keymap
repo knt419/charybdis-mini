@@ -44,18 +44,18 @@
         };
     };
 
-    /* macros { */
-    /*     dbl_shft: dbl_shft { */
-    /*         compatible = "zmk,behavior-macro"; */
-    /*         #binding-cells = <0>; */
-    /*         bindings = <&macro_tap LSHFT LSHFT>; */
-    /*     }; */
-    /*     dbl_ctrl: dbl_ctrl { */
-    /*         compatible = "zmk,behavior-macro"; */
-    /*         #binding-cells = <0>; */
-    /*         bindings = <&macro_tap LCTRL LCTRL>; */
-    /*     }; */
-    /* }; */
+    macros {
+        dbl_shft: dbl_shft {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>; */
+            bindings = <&macro_tap &kp LSHFT &kp LSHFT>;
+        };
+        dbl_ctrl: dbl_ctrl {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &kp LCTRL &kp LCTRL>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -84,7 +84,7 @@
             label = "MACRO";
             bindings = <
             &kp ESC       &kp F1       &kp F2       &kp F3      &kp F4         &kp F5             &kp F6          &kp F7       &kp F8       &kp F9       &kp F10     &kp BSPC
-            &mt LCTRL TAB &kp LC(A)    &kp UNDER    &kp LCTRL   &kp LSHFT      &kp LS(LC(V))      &kp LEFT        &kp DOWN     &kp UP       &kp RIGHT    &kp RPAR    &kp ENTER
+            &mt LCTRL TAB &kp LC(A)    &kp UNDER    &dbl_ctrl   &dbl_shft      &kp LS(LC(V))      &kp LEFT        &kp DOWN     &kp UP       &kp RIGHT    &kp RPAR    &kp ENTER
             &kp LSHFT     &kp LC(Z)    &kp LC(X)    &kp LC(C)   &kp LC(V)      &kp LG(V)          &kp N6          &kp N7       &kp N8       &kp N9       &kp N0      &kp RSHFT
                                                     &mkp MCLK   &kp LANG1      &kp LANG2          &lt 2 BSPC      &none
             >;
