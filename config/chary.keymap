@@ -72,20 +72,20 @@
         number_layer {
             label = "NUMBER";
             bindings = <
-&kp GRAVE      &kp LBKT  &kp F2     &kp F3     &kp F4     &kp F5            &kp F6    &kp F7       &kp F8  &kp F9     &kp RBKT  &kp BSPC
-&mt LCTRL TAB  &kp LPAR  &kp UNDER  &kp MINUS  &kp EQUAL  &kp PLUS          &kp LEFT  &kp DOWN     &kp UP  &kp RIGHT  &kp RPAR  &kp ENTER
-&kp LSHFT      &kp N1    &kp N2     &kp N3     &kp N4     &kp N5            &kp N6    &kp N7       &kp N8  &kp N9     &kp N0    &kp RSHFT
-                                    &mkp RCLK  &td0       &mt LALT LANG2    &none     &lt 1 ENTER
+&kp GRAVE  &kp LBKT  &kp F2     &kp F3     &kp F4     &kp F5            &kp F6    &kp F7       &kp F8  &kp F9     &kp RBKT  &kp BSPC
+&trans     &kp LPAR  &kp UNDER  &kp MINUS  &kp EQUAL  &kp PLUS          &kp LEFT  &kp DOWN     &kp UP  &kp RIGHT  &kp RPAR  &kp ENTER
+&trans     &kp N1    &kp N2     &kp N3     &kp N4     &kp N5            &kp N6    &kp N7       &kp N8  &kp N9     &kp N0    &kp RSHFT
+                                &mkp RCLK  &td0       &mt LALT LANG2    &none     &lt 1 ENTER
             >;
         };
 
         macro_layer {
             label = "MACRO";
             bindings = <
-&kp ESC        &kp F1     &kp F2     &kp F3     &kp F4     &kp F5           &kp F6      &kp F7    &kp F8  &kp F9     &kp F10   &kp BSPC
-&mt LCTRL TAB  &kp LC(A)  &kp UNDER  &dbl_ctrl  &dbl_shft  &kp LS(LC(V))    &kp LEFT    &kp DOWN  &kp UP  &kp RIGHT  &kp RPAR  &kp ENTER
-&kp LSHFT      &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LG(V)        &kp N6      &kp N7    &kp N8  &kp N9     &kp N0    &kp RSHFT
-                                     &mkp MCLK  &kp LANG1  &kp LANG2        &lt 2 BSPC  &none
+&kp ESC  &kp F1     &kp F2     &kp F3     &kp F4     &kp F5           &kp F6      &kp F7    &kp F8  &kp F9     &kp F10   &kp BSPC
+&trans   &kp LC(A)  &kp UNDER  &dbl_ctrl  &dbl_shft  &kp LS(LC(V))    &kp LEFT    &kp DOWN  &kp UP  &kp RIGHT  &kp RPAR  &kp ENTER
+&trans   &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LG(V)        &kp N6      &kp N7    &kp N8  &kp N9     &kp N0    &kp RSHFT
+                               &mkp MCLK  &kp LANG1  &kp LANG2        &lt 2 BSPC  &none
             >;
         };
 
