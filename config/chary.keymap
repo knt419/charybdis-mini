@@ -19,7 +19,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
-            bindings = <&mt LSHFT SPACE>, <&mt SCROLL>;
+            bindings = <&mt LSHFT SPACE>, <&mo SCROLL>;
         };
 
         td1: tap_dance_1 {
