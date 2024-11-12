@@ -12,6 +12,10 @@
 #define SCROLL  5
 #define SLOW    6
 
+&mt {
+    flavor = "hold-preferred";
+};
+
 / {
     behaviors {
         td0: tap_dance_0 {
@@ -71,9 +75,6 @@
         };
     };
 
-    &mt {
-        flavor = "hold-preferred";
-    };
 
     keymap {
         compatible = "zmk,keymap";
