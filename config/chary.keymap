@@ -57,7 +57,7 @@
             bindings = <&kp RPAR>, <&kp RBRC>, <&kp RBKT>;
         };
 
-        bs0: bs0 {
+        lt0: layer_tap_0 {
             compatible = "zmk,behavior-hold-tap";
             flavor = "tap-preferred";
             #binding-cells = <2>;
@@ -90,7 +90,7 @@
 &gresc         &kp Q  &kp W  &kp E      &kp R  &kp T    &kp Y  &kp U        &kp I      &kp O    &kp P     &td3
 &mt LCTRL TAB  &kp A  &kp S  &kp D      &kp F  &kp G    &kp H  &kp J        &kp K      &kp L    &kp SEMI  &kp SQT
 &kp LSHFT      &kp Z  &kp X  &kp C      &kp V  &kp B    &kp N  &kp M        &kp COMMA  &kp DOT  &kp FSLH  &kp BSLH
-                             &mkp LCLK  &td0   &td1     &bs0 2 BSPC   &lt 1 ENTER
+                             &mkp LCLK  &td0   &td1     &lt0 2 BSPC   &lt0 1 ENTER
             >;
         };
 
@@ -100,7 +100,7 @@
 &kp GRAVE  &kp F1  &kp F2     &kp F3     &kp F4     &kp F5            &kp F6    &kp F7       &kp F8  &kp F9     &kp F10  &kp BSPC
 &trans     &td4  &kp UNDER  &kp MINUS  &kp EQUAL  &kp PLUS          &kp LEFT  &kp DOWN     &kp UP  &kp RIGHT  &td5  &kp ENTER
 &trans     &kp N1    &kp N2     &kp N3     &kp N4     &kp N5            &kp N6    &kp N7       &kp N8  &kp N9     &kp N0    &kp RSHFT
-                                &mkp RCLK  &td0       &mt LALT LANG2    &none     &lt 1 ENTER
+                                &mkp RCLK  &td0       &mt LALT LANG2    &none     &lt0 1 ENTER
             >;
         };
 
@@ -110,7 +110,7 @@
 &gresc   &kp F1     &kp F2     &kp F3     &kp F4     &kp F5           &kp F6      &kp F7    &kp F8  &kp F9     &kp F10   &kp BSPC
 &trans   &kp LC(A)  &kp UNDER  &dbl_ctrl  &dbl_shft  &kp LS(LC(V))    &kp LEFT    &kp DOWN  &kp UP  &kp RIGHT  &kp RPAR  &kp ENTER
 &trans   &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LG(V)        &kp N6      &kp N7    &kp N8  &kp N9     &kp N0    &kp RSHFT
-                               &mkp MCLK  &kp LANG1  &kp LANG2        &lt 2 BSPC  &none
+                               &mkp MCLK  &kp LANG1  &kp LANG2        &lt0 2 BSPC  &none
             >;
         };
 
@@ -120,7 +120,7 @@
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &bt BT_CLR
 &sys_reset    &none         &none         &none         &none         &out OUT_USB    &out OUT_USB  &none         &none         &none         &none           &sys_reset
 &bootloader   &none         &none         &none         &none         &out OUT_BLE    &out OUT_BLE  &none         &none         &none         &studio_unlock  &bootloader
-                                          &none         &none         &lt 3 LALT      &lt 2 BSPC    &lt 1 ENTER
+                                          &none         &none         &lt 3 LALT      &lt0 2 BSPC    &lt0 1 ENTER
             >;
         };
 
@@ -130,7 +130,7 @@
 &gresc         &kp Q  &kp W  &kp E      &kp R  &kp T    &kp Y  &kp U        &kp I      &kp O    &kp P     &td3
 &mt LCTRL TAB  &kp A  &kp S  &kp D      &kp F  &kp G    &kp H  &kp J        &kp K      &kp L    &kp SEMI  &kp SQT
 &kp LSHFT      &kp Z  &kp X  &kp C      &kp V  &kp B    &kp N  &kp M        &kp COMMA  &kp DOT  &kp FSLH  &kp BSLH
-                             &mkp LCLK  &mo 5  &mo 6    &td2   &lt 1 ENTER
+                             &mkp LCLK  &mo 5  &mo 6    &lt0 2 BSPC   &lt0 1 ENTER
             >;
         };
 
