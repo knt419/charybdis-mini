@@ -59,7 +59,7 @@
 
         bs0: bs0 {
             compatible = "zmk,behavior-hold-tap";
-            flavor = "hold-preferred";
+            flavor = "tapp-preferred";
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             quick-tap-ms = <200>;
