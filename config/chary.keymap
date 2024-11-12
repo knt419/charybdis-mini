@@ -18,7 +18,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
-            bindings = <&mt LSHFT SPACE>, <&lt SCROLL SPACE>;
+            bindings = <&mt LSHFT SPACE>, <&mt SCROLL>;
         };
 
         td1: tap_dance_1 {
@@ -31,7 +31,7 @@
         td2: tap_dance_2 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <300>;
+            tapping-term-ms = <200>;
             bindings = <&lt 2 BSPC>, <&kp BSPC>;
         };
 
@@ -45,14 +45,14 @@
         td4: tap_dance_4 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <300>;
             bindings = <&kp LPAR>, <&kp LBRC>, <&kp LBKT>;
         };
 
         td5: tap_dance_5 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <300>;
             bindings = <&kp RPAR>, <&kp RBRC>, <&kp RBKT>;
         };
     };
@@ -70,6 +70,10 @@
             bindings = <&macro_tap>, <&kp LCTRL &kp LCTRL>;
         };
     };
+
+    &mt {
+        flavor = "hold-preferred";
+    }
 
     keymap {
         compatible = "zmk,keymap";
