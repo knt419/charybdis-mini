@@ -80,13 +80,13 @@
         dbl_shft: dbl_shft {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap &kp LSHFT &kp LSHFT>;
+            bindings = <&kp LSHFT &kp LSHFT>;
         };
 
         dbl_ctrl: dbl_ctrl {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap &kp LCTRL &kp LCTRL>;
+            bindings = <&kp LCTRL &kp LCTRL>;
         };
     };
 
