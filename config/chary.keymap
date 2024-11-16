@@ -18,7 +18,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&mt LSHFT SPACE>, <&mo SCROLL>;
+            bindings = <&eisu_mt0 LSHFT SPACE>, <&mo SCROLL>;
         };
 
         td1: tap_dance_1 {
@@ -26,13 +26,6 @@
             #binding-cells = <0>;
             tapping-term-ms = <300>;
             bindings = <&mt LGUI LANG1>, <&lt 3 LANG2>;
-        };
-
-        td2: tap_dance_2 {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&lt 2 BSPC>, <&kp BSPC>;
         };
 
         td3: tap_dance_3 {
@@ -124,16 +117,6 @@
                     , <&macro_pause_for_release>
                     , <&macro_param_1to1>
                     , <&macro_release &mo MACRO_PLACEHOLDER>
-                    ;
-        };
-
-        eisu_mo1: eisu_mo1 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_press &mo 1>
-                    , <&macro_tap &kp LANG2>
-                    , <&macro_pause_for_release>
-                    , <&macro_release &mo 1>
                     ;
         };
 
