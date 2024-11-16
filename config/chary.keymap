@@ -97,32 +97,24 @@
             bindings = <&kp LCTRL &kp LCTRL>;
         };
 
-        eisu_lt0: eisu_lt0 {
-            compatible = "zmk,behavior-macro-two-param";
-            #binding-cells = <2>;
-            bindings = <&macro_param_1to1>
-                    , <&macro_param_2to2>
-                    , <&macro_press &lt0 MACRO_PLACEHOLDER MACRO_PLACEHOLDER>
+        eisu_mo1: eisu_mo1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press &mo 1>
                     , <&macro_tap &kp LANG2>
                     , <&macro_pause_for_release>
-                    , <&macro_param_1to1>
-                    , <&macro_param_2to2>
-                    , <&macro_release &lt0 MACRO_PLACEHOLDER MACRO_PLACEHOLDER>
+                    , <&macro_release &mo 1>
                     , <&macro_tap &kp LANG1>
                     ;
         };
 
-        eisu_mt0: eisu_mt0 {
-            compatible = "zmk,behavior-macro-two-param";
-            #binding-cells = <2>;
-            bindings = <&macro_param_1to1>
-                    , <&macro_param_2to2>
-                    , <&macro_press &mt0 MACRO_PLACEHOLDER MACRO_PLACEHOLDER>
+        eisu_shft: eisu_shft {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press &kp LSHFT>
                     , <&macro_tap &kp LANG2>
                     , <&macro_pause_for_release>
-                    , <&macro_param_1to1>
-                    , <&macro_param_2to2>
-                    , <&macro_release &mt0 MACRO_PLACEHOLDER MACRO_PLACEHOLDER>
+                    , <&macro_release &kp LSHFT>
                     , <&macro_tap &kp LANG1>
                     ;
         };
@@ -137,7 +129,7 @@
 &gresc         &kp Q  &kp W  &kp E      &kp R             &kp T    &kp Y        &kp U         &kp I      &kp O    &kp P     &td3
 &mt LCTRL TAB  &kp A  &kp S  &kp D      &kp F             &kp G    &kp H        &kp J         &kp K      &kp L    &kp SEMI  &kp SQT
 &kp LSHFT      &kp Z  &kp X  &kp C      &kp V             &kp B    &kp N        &kp M         &kp COMMA  &kp DOT  &kp FSLH  &kp BSLH
-                             &mkp LCLK  &eisu_mt0 LSHFT SPACE  &td1     &bsdel0  &eisu_lt0 1 ENTER
+                             &mkp LCLK  &mt0 eisu_shft SPACE  &td1     &bsdel0  &lt0 eisu_mo1 ENTER
             >;
         };
 
@@ -177,7 +169,7 @@
 &gresc         &kp Q  &kp W  &kp E      &kp R  &kp T    &kp Y        &kp U         &kp I      &kp O    &kp P     &td3
 &mt LCTRL TAB  &kp A  &kp S  &kp D      &kp F  &kp G    &kp H        &kp J         &kp K      &kp L    &kp SEMI  &kp SQT
 &kp LSHFT      &kp Z  &kp X  &kp C      &kp V  &kp B    &kp N        &kp M         &kp COMMA  &kp DOT  &kp FSLH  &kp BSLH
-                             &mkp LCLK  &mo 5  &mo 6    &bsdel0  &eisu_lt0 1 ENTER
+                             &mkp LCLK  &mo 5  &mo 6    &bsdel0  &lt0 eisu_mo1 ENTER
             >;
         };
 
