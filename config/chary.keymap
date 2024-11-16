@@ -98,7 +98,7 @@
         };
 
         eisu_lt0: eisu_lt0 {
-            compatible = "zmk,behavior-macro";
+            compatible = "zmk,behavior-macro-two-param";
             #binding-cells = <2>;
             bindings = <&macro_press>
                     , <&macro_param_1to1>
