@@ -67,6 +67,15 @@
             bindings = <&eisu_mo0>, <&kp>;
         };
 
+        eisu_lt1: eisu_layer_tap_1 {
+            compatible = "zmk,behavior-hold-tap";
+            flavor = "tap-preferred";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
+            bindings = <&eisu_mo1>, <&kp>;
+        };
+
         eisu_mt0: eisu_mod_tap_0 {
             compatible = "zmk,behavior-hold-tap";
             flavor = "hold-preferred";
@@ -74,6 +83,15 @@
             tapping-term-ms = <200>;
             quick-tap-ms = <200>;
             bindings = <&eisu_mod>, <&kp>;
+        };
+
+        eisu_mt1: eisu_mod_tap_1 {
+            compatible = "zmk,behavior-hold-tap";
+            flavor = "hold-preferred";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
+            bindings = <&eisu_mod1>, <&kp>;
         };
 
         eisu_mt_scrl: eisu_mod_tap_scroll {
@@ -138,6 +156,34 @@
                     , <&macro_pause_for_release>
                     , <&macro_param_1to1>
                     , <&macro_release &kp MACRO_PLACEHOLDER>
+                    ;
+        };
+
+        eisu_mo1: eisu_mo1 {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings = <&macro_param_1to1>
+                    , <&macro_press &mo MACRO_PLACEHOLDER>
+                    , <&macro_tap &kp F21> //backup ime state
+                    , <&macro_tap &kp LANG2>
+                    , <&macro_pause_for_release>
+                    , <&macro_param_1to1>
+                    , <&macro_release &mo MACRO_PLACEHOLDER>
+                    , <&macro_release &kp F22> //restore ime state
+                    ;
+        };
+
+        eisu_mod1: eisu_mod1 {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings = <&macro_param_1to1>
+                    , <&macro_press &kp MACRO_PLACEHOLDER>
+                    , <&macro_tap &kp F21> //backup ime state
+                    , <&macro_tap &kp LANG2>
+                    , <&macro_pause_for_release>
+                    , <&macro_param_1to1>
+                    , <&macro_release &kp MACRO_PLACEHOLDER>
+                    , <&macro_release &kp F22> //restore ime state
                     ;
         };
 
