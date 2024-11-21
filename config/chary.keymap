@@ -162,9 +162,9 @@
         eisu_mo1: eisu_mo1 {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
-            bindings = <&macro_param_1to1>
+            bindings = <&macro_tap &kp F21> //backup ime state
+                    , <&macro_param_1to1>
                     , <&macro_press &mo MACRO_PLACEHOLDER>
-                    , <&macro_tap &kp F21> //backup ime state
                     , <&macro_tap &kp LANG2>
                     , <&macro_pause_for_release>
                     , <&macro_param_1to1>
@@ -176,9 +176,9 @@
         eisu_mod1: eisu_mod1 {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
-            bindings = <&macro_param_1to1>
+            bindings = <&macro_tap &kp F21> //backup ime state
+                    , <&macro_param_1to1>
                     , <&macro_press &kp MACRO_PLACEHOLDER>
-                    , <&macro_tap &kp F21> //backup ime state
                     , <&macro_tap &kp LANG2>
                     , <&macro_pause_for_release>
                     , <&macro_param_1to1>
