@@ -130,13 +130,13 @@
             label = "C";
         };
 
-        td_spb: tap_dance_slash_pipe_bs {
+        td_sbs: tap_dance_slash_bs {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp SLASH>, <&kp PIPE>, <&kp BACKSLASH>;
+            bindings = <&kp SLASH>, <&kp BACKSLASH>;
 
-            label = "TDSPS";
+            label = "TDSBS";
         };
 
         tdv: tap_dance_v {
@@ -237,7 +237,7 @@
             bindings = <
 &gresc           &kp Q  &kp W  &kp E      &kp R            &kp T    &kp Y    &kp U              &kp I      &kp O    &tdp      &td3
 &mt LCTRL TAB    &tda   &tds   &kp D      &kp F            &tdg     &tdh     &kp J              &tdk       &tdl     &kp SEMI  &kp SQT
-&mt0 LSHFT LEFT  &tdz   &tdx   &tdc       &tdv             &kp B    &kp N    &kp M              &kp COMMA  &kp DOT  &td_spb   &mt0 RSHFT RIGHT
+&mt0 LSHFT LEFT  &tdz   &tdx   &tdc       &tdv             &kp B    &kp N    &kp M              &kp COMMA  &kp DOT  &td_sbs   &mt0 RSHFT RIGHT
                                &mkp LCLK  &mt LSHFT SPACE  &td1     &bsdel0  &eisu_lt0 1 ENTER
             >;
         };
@@ -277,7 +277,7 @@
             bindings = <
 &gresc           &kp Q  &kp W  &kp E      &kp R  &kp T    &kp Y    &kp U              &kp I      &kp O    &tdp      &td3
 &mt LCTRL TAB    &tda   &tds   &kp D      &kp F  &tdg     &tdh     &kp J              &tdk       &tdl     &kp SEMI  &kp SQT
-&mt0 LSHFT LEFT  &tdz   &tdx   &tdc       &tdv   &kp B    &kp N    &kp M              &kp COMMA  &kp DOT  &td_spb   &mt0 RSHFT RIGHT
+&mt0 LSHFT LEFT  &tdz   &tdx   &tdc       &tdv   &kp B    &kp N    &kp M              &kp COMMA  &kp DOT  &td_sbs   &mt0 RSHFT RIGHT
                                &mkp LCLK  &mo 5  &mo 6    &bsdel0  &eisu_lt0 1 ENTER
             >;
         };
