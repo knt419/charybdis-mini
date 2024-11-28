@@ -144,15 +144,6 @@
             bindings = <&eisu_mo0>, <&kp>;
         };
 
-        eisu_mt0: eisu_mod_tap_0 {
-            compatible = "zmk,behavior-hold-tap";
-            flavor = "hold-preferred";
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <200>;
-            bindings = <&eisu_mod>, <&kp>;
-        };
-
         mt0: mod_tap_0 {
             compatible = "zmk,behavior-hold-tap";
             flavor = "tap-preferred";
@@ -166,9 +157,9 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&lt0 2 BSPC>, <&kp DEL>;
+
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-
     };
 
     macros {
@@ -188,27 +179,32 @@
         eisu_mo0: eisu_mo0 {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
-            bindings = <&macro_param_1to1>
-                    , <&macro_press &mo MACRO_PLACEHOLDER>
-                    , <&macro_tap &kp LANG2>
-                    , <&macro_pause_for_release>
-                    , <&macro_param_1to1>
-                    , <&macro_release &mo MACRO_PLACEHOLDER>
-                    ;
+            bindings =
+                <&macro_param_1to1>,
+                <&macro_press>,
+                <&mo MACRO_PLACEHOLDER>,
+                <&macro_tap>,
+                <&kp LANG2>,
+                <&macro_pause_for_release>,
+                <&macro_param_1to1>,
+                <&macro_release>,
+                <&mo MACRO_PLACEHOLDER>;
         };
 
         eisu_mod: eisu_mod {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
-            bindings = <&macro_param_1to1>
-                    , <&macro_press &kp MACRO_PLACEHOLDER>
-                    , <&macro_tap &kp LANG2>
-                    , <&macro_pause_for_release>
-                    , <&macro_param_1to1>
-                    , <&macro_release &kp MACRO_PLACEHOLDER>
-                    ;
+            bindings =
+                <&macro_param_1to1>,
+                <&macro_press>,
+                <&kp MACRO_PLACEHOLDER>,
+                <&macro_tap>,
+                <&kp LANG2>,
+                <&macro_pause_for_release>,
+                <&macro_param_1to1>,
+                <&macro_release>,
+                <&kp MACRO_PLACEHOLDER>;
         };
-
     };
 
     keymap {
@@ -217,19 +213,19 @@
         default_layer {
             label = "DEFAULT";
             bindings = <
-&gresc         &kp Q  &kp W  &kp E      &kp R             &kp T    &kp Y        &kp U         &kp I      &kp O    &tdp     &td3
-&mt LCTRL TAB  &tda  &tds  &kp D      &kp F             &tdg    &tdh        &kp J         &tdk      &tdl    &kp SEMI  &kp SQT
-&mt0 LSHFT LEFT     &tdz  &kp X  &tdc      &tdv             &kp B    &kp N        &kp M         &kp COMMA  &kp DOT  &td_spb  &mt0 RSHFT RIGHT
-                             &mkp LCLK  &mt LSHFT SPACE  &td1     &bsdel0  &eisu_lt0 1 ENTER
+&gresc           &kp Q  &kp W  &kp E      &kp R            &kp T    &kp Y    &kp U              &kp I      &kp O    &tdp      &td3
+&mt LCTRL TAB    &tda   &tds   &kp D      &kp F            &tdg     &tdh     &kp J              &tdk       &tdl     &kp SEMI  &kp SQT
+&mt0 LSHFT LEFT  &tdz   &tdx   &tdc       &tdv             &kp B    &kp N    &kp M              &kp COMMA  &kp DOT  &td_spb   &mt0 RSHFT RIGHT
+                               &mkp LCLK  &mt LSHFT SPACE  &td1     &bsdel0  &eisu_lt0 1 ENTER
             >;
         };
 
         number_layer {
             label = "NUMBER";
             bindings = <
-&kp GRAVE  &kp F1  &kp F2     &kp F3     &kp F4            &kp F5            &kp F6    &kp F7        &kp F8  &kp F9     &kp F10  &kp BSPC
-&trans     &td4    &kp UNDER  &kp MINUS  &kp EQUAL         &kp PLUS          &kp LEFT  &kp DOWN      &kp UP  &kp RIGHT  &td5     &kp ENTER
-&trans     &kp N1  &kp N2     &kp N3     &kp N4            &kp N5            &kp N6    &kp N7        &kp N8  &kp N9     &kp N0   &trans
+&kp GRAVE  &kp F1  &kp F2     &kp F3     &kp F4           &kp F5            &kp F6    &kp F7        &kp F8  &kp F9     &kp F10  &kp BSPC
+&trans     &td4    &kp UNDER  &kp MINUS  &kp EQUAL        &kp PLUS          &kp LEFT  &kp DOWN      &kp UP  &kp RIGHT  &td5     &kp ENTER
+&trans     &kp N1  &kp N2     &kp N3     &kp N4           &kp N5            &kp N6    &kp N7        &kp N8  &kp N9     &kp N0   &trans
                               &mkp RCLK  &mt LSHFT SPACE  &mt LALT LANG2    &none     &lt0 1 ENTER
             >;
         };
@@ -237,10 +233,10 @@
         macro_layer {
             label = "MACRO";
             bindings = <
-&gresc  &kp F1     &kp F2     &kp F3     &kp F4     &kp F5           &kp F6       &kp F7    &kp F8  &kp F9     &kp F10   &kp BSPC
-&trans  &kp LC(A)  &kp UNDER  &dbl_ctrl  &dbl_shft  &kp LS(LC(V))    &kp LEFT     &kp DOWN  &kp UP  &kp RIGHT  &kp RPAR  &kp ENTER
-&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LG(V)        &kp N6       &kp N7    &kp N8  &kp N9     &kp N0    &kp RSHFT
-                              &mkp MCLK  &kp LANG1  &kp LANG2        &bsdel0  &none
+&gresc  &kp F1     &kp F2     &kp F3     &kp F4     &kp F5           &kp F6    &kp F7         &kp F8     &kp F9     &kp F10  &kp BSPC
+&trans  &kp LC(A)  &trans     &dbl_ctrl  &dbl_shft  &kp LS(LC(V))    &kp LEFT  &kp DOWN       &kp UP     &kp RIGHT  &trans   &kp ENTER
+&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LG(V)        &kp HOME  &kp PAGE_DOWN  &kp PG_UP  &kp END    &trans   &trans
+                              &mkp MCLK  &kp LANG1  &kp LANG2        &bsdel0   &none
             >;
         };
 
@@ -250,17 +246,17 @@
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &bt BT_CLR
 &sys_reset    &none         &none         &none         &none         &out OUT_USB    &out OUT_USB  &none         &none         &none         &none           &sys_reset
 &bootloader   &none         &none         &none         &none         &out OUT_BLE    &out OUT_BLE  &none         &none         &none         &studio_unlock  &bootloader
-                                          &none         &none         &lt 3 LALT      &bsdel0   &lt0 1 ENTER
+                                          &none         &none         &lt 3 LALT      &bsdel0       &lt0 1 ENTER
             >;
         };
 
         pointer_layer {
             label = "POINTER";
             bindings = <
-&gresc         &kp Q  &kp W  &kp E      &kp R             &kp T    &kp Y        &kp U         &kp I      &kp O    &tdp     &td3
-&mt LCTRL TAB  &tda  &tds  &kp D      &kp F             &tdg    &tdh        &kp J         &tdk      &tdl    &kp SEMI  &kp SQT
-&mt0 LSHFT LEFT     &tdz  &kp X  &tdc      &tdv             &kp B    &kp N        &kp M         &kp COMMA  &kp DOT  &td_spb  &mt0 RSHFT RIGHT
-                             &mkp LCLK  &mo 5  &mo 6    &bsdel0  &eisu_lt0 1 ENTER
+&gresc           &kp Q  &kp W  &kp E      &kp R  &kp T    &kp Y    &kp U              &kp I      &kp O    &tdp      &td3
+&mt LCTRL TAB    &tda   &tds   &kp D      &kp F  &tdg     &tdh     &kp J              &tdk       &tdl     &kp SEMI  &kp SQT
+&mt0 LSHFT LEFT  &tdz   &tdx   &tdc       &tdv   &kp B    &kp N    &kp M              &kp COMMA  &kp DOT  &td_spb   &mt0 RSHFT RIGHT
+                               &mkp LCLK  &mo 5  &mo 6    &bsdel0  &eisu_lt0 1 ENTER
             >;
         };
 
