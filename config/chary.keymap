@@ -47,6 +47,8 @@
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp A>, <&kp AT>;
+
+            label = "A";
         };
 
         tds: tap_dance_s {
@@ -54,6 +56,8 @@
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp S>, <&kp DOLLAR>;
+
+            label = "S";
         };
 
         tdh: tap_dance_h {
@@ -61,6 +65,8 @@
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp H>, <&kp HASH>;
+
+            label = "H";
         };
 
         tdl: tap_dance_l {
@@ -75,6 +81,8 @@
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp K>, <&kp CARET>;
+
+            label = "K";
         };
 
         tdg: tap_dance_g {
@@ -82,6 +90,8 @@
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp G>, <&kp AMPERSAND>;
+
+            label = "G";
         };
 
         tdx: tap_dance_x {
@@ -89,6 +99,8 @@
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp X>, <&kp ASTERISK>;
+
+            label = "X";
         };
 
         tdz: tap_dance_z {
@@ -96,6 +108,8 @@
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp Z>, <&kp PERCENT>;
+
+            label = "Z";
         };
 
         tdp: tap_dance_p {
@@ -103,6 +117,8 @@
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp P>, <&kp PSCRN>;
+
+            label = "P";
         };
 
         tdc: tap_dance_c {
@@ -110,13 +126,17 @@
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp C>, <&kp LC(C)>;
+
+            label = "C";
         };
 
         td_spb: tap_dance_slash_pipe_bs {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp C>, <&kp LC(C)>;
+            bindings = <&kp SLASH>, <&kp PIPE>, <&kp BACKSLASH>;
+
+            label = "TDSPS";
         };
 
         tdv: tap_dance_v {
@@ -124,6 +144,8 @@
             #binding-cells = <0>;
             tapping-term-ms = <300>;
             bindings = <&kp V>, <&kp LC(V)>, <&kp LS(LC(V))>;
+
+            label = "V";
         };
 
         lt0: layer_tap_0 {
