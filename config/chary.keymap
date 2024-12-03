@@ -154,6 +154,33 @@
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        td2: tap_dance_2 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <300>;
+            bindings = <&kp MINUS>, <&kp PSCRN>;
+
+            label = "TD2";
+        };
+
+        tdf: tap_dance_f {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp F>, <&dbl_shft>;
+
+            label = "TDF";
+        };
+
+        tdd: tap_dance_d {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp D>, <&dbl_ctrl>;
+
+            label = "TDD";
+        };
     };
 
     macros {
@@ -207,8 +234,8 @@
         default_layer {
             label = "DEFAULT";
             bindings = <
-&lt0 3 ESCAPE  &kp Q  &kp W  &kp E      &kp R            &kp T    &kp Y    &kp U              &kp I      &kp O    &tdp       &kp MINUS
-&mt LCTRL TAB  &tda   &tds   &kp D      &kp F            &tdg     &tdh     &kp J              &kp K      &kp L    &kp SEMI   &kp SQT
+&lt0 3 ESCAPE  &kp Q  &kp W  &kp E      &kp R            &kp T    &kp Y    &kp U              &kp I      &kp O    &kp P      &td2
+&mt LCTRL TAB  &tda   &kp S  &tdd       &tdf             &tdg     &tdh     &kp J              &kp K      &kp L    &kp SEMI   &kp SQT
 &kp LSHFT      &tdz   &tdx   &tdc       &tdv             &kp B    &kp N    &kp M              &kp COMMA  &kp DOT  &kp SLASH  &kp BACKSLASH
                              &mkp LCLK  &mt LSHFT SPACE  &td1     &bsdel0  &eisu_lt0 1 ENTER
             >;
@@ -217,10 +244,10 @@
         number_layer {
             label = "NUMBER";
             bindings = <
-&kp GRAVE  &kp F1  &kp F2    &kp F3     &kp F4           &kp F5        &kp F6    &kp F7        &kp F8  &kp F9     &kp F10  &kp BSPC
-&trans     &td4    &kp PIPE  &kp MINUS  &kp EQUAL        &kp PLUS      &kp LEFT  &kp DOWN      &kp UP  &kp RIGHT  &td5     &kp ENTER
-&trans     &kp N1  &kp N2    &kp N3     &kp N4           &kp N5        &kp N6    &kp N7        &kp N8  &kp N9     &kp N0   &trans
-                             &mkp RCLK  &mt LSHFT SPACE  &kp PERIOD    &none     &lt0 1 ENTER
+&kp GRAVE  &kp F1  &kp F2     &kp F3     &kp F4           &kp F5        &kp F6    &kp F7        &kp F8  &kp F9     &kp F10  &kp BSPC
+&trans     &td4    &dbl_shft  &dbl_ctrl  &kp EQUAL        &kp PLUS      &kp LEFT  &kp DOWN      &kp UP  &kp RIGHT  &td5     &kp ENTER
+&trans     &kp N1  &kp N2     &kp N3     &kp N4           &kp N5        &kp N6    &kp N7        &kp N8  &kp N9     &kp N0   &trans
+                              &mkp RCLK  &mt LSHFT SPACE  &kp PERIOD    &none     &lt0 1 ENTER
             >;
         };
 
@@ -247,10 +274,10 @@
         pointer_layer {
             label = "POINTER";
             bindings = <
-&lt0 3 ESCAPE    &kp Q  &kp W  &kp E      &kp R  &kp T    &kp Y    &kp U              &kp I      &kp O    &tdp       &kp MINUS
-&mt LCTRL TAB    &tda   &tds   &kp D      &kp F  &tdg     &tdh     &kp J              &kp K      &kp L    &kp SEMI   &kp SQT
-&mt0 LSHFT LEFT  &tdz   &tdx   &tdc       &tdv   &kp B    &kp N    &kp M              &kp COMMA  &kp DOT  &kp SLASH  &kp BACKSLASH
-                               &mkp LCLK  &mo 5  &mo 6    &bsdel0  &eisu_lt0 1 ENTER
+&lt0 3 ESCAPE  &kp Q  &kp W  &kp E      &kp R  &kp T    &kp Y    &kp U              &kp I      &kp O    &kp P      &td2
+&mt LCTRL TAB  &tda   &kp S  &kp D      &kp F  &tdg     &tdh     &kp J              &kp K      &kp L    &kp SEMI   &kp SQT
+&kp LSHFT      &tdz   &tdx   &tdc       &tdv   &kp B    &kp N    &kp M              &kp COMMA  &kp DOT  &kp SLASH  &kp BACKSLASH
+                             &mkp LCLK  &mo 5  &mo 6    &bsdel0  &eisu_lt0 1 ENTER
             >;
         };
 
