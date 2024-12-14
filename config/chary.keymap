@@ -75,15 +75,6 @@
             label = "X&*";
         };
 
-        tdz: tap_dance_z {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp Z>, <&kp PERCENT>;
-
-            label = "Z&%";
-        };
-
         tdc: tap_dance_c {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
@@ -150,7 +141,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp F>, <&dbl_shft>;
+            bindings = <&kp N>, <&dbl_ctrl>;
 
             label = "TDN";
         };
@@ -159,7 +150,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp D>, <&dbl_ctrl>;
+            bindings = <&kp T>, <&dbl_shft>;
 
             label = "TDT";
         };
@@ -216,9 +207,9 @@
         default_layer {
             label = "DEFAULT";
             bindings = <
-&lt0 3 ESCAPE  &tdg   &kp M  &kp D      &kp R            &kp B    &kp Q          &kp F              &kp U      &kp W    &kp P      &td2
-&mt LCTRL TAB  &kp K  &kp S  &tdt       &tdn             &tdh     &kp Y          &tda               &kp E      &kp I    &kp O      &kp MINUS
-&kp LSHFT      &kp Z  &tdx   &tdc       &tdv             &kp L    &kp SEMICOLON  &kp J              &kp COMMA  &kp DOT  &kp SLASH  &kp BACKSLASH
+&lt0 3 ESCAPE  &tdh   &kp M  &kp R      &kp D            &kp J    &kp Q          &kp F              &kp U      &kp L    &kp P      &td2
+&mt LCTRL TAB  &kp K  &kp S  &tdn       &tdt             &tdg     &kp Y          &tda               &kp E      &kp I    &kp O      &kp MINUS
+&kp LSHFT      &kp Z  &kp W  &tdc       &tdv             &kp B    &kp SEMICOLON  &tdx               &kp COMMA  &kp DOT  &kp SLASH  &kp BACKSLASH
                              &mkp LCLK  &mt LSHFT SPACE  &td1     &bsdel0        &eisu_lt0 1 ENTER
             >;
         };
@@ -256,9 +247,9 @@
         pointer_layer {
             label = "POINTER";
             bindings = <
-&lt0 3 ESCAPE  &tdg   &kp M  &kp D      &kp R  &kp B    &kp Q          &kp F              &kp U      &kp W    &kp P      &td2
-&mt LCTRL TAB  &kp K  &kp S  &tdt       &tdn   &tdh     &kp Y          &tda               &kp E      &kp I    &kp O      &kp MINUS
-&kp LSHFT      &kp Z  &tdx   &tdc       &tdv   &kp L    &kp SEMICOLON  &kp J              &kp COMMA  &kp DOT  &kp SLASH  &kp BACKSLASH
+&lt0 3 ESCAPE  &tdh   &kp M  &kp R      &kp D  &kp J    &kp Q          &kp F              &kp U      &kp L    &kp P      &td2
+&mt LCTRL TAB  &kp K  &kp S  &tdn       &tdt   &tdg     &kp Y          &tda               &kp E      &kp I    &kp O      &kp MINUS
+&kp LSHFT      &kp Z  &kp W  &tdc       &tdv   &kp B    &kp SEMICOLON  &tdx               &kp COMMA  &kp DOT  &kp SLASH  &kp BACKSLASH
                              &mkp LCLK  &mo 5  &mo 6    &bsdel0        &eisu_lt0 1 ENTER
             >;
         };
