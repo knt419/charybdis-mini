@@ -208,9 +208,9 @@
         default_layer {
             label = "DEFAULT";
             bindings = <
-&lt0 3 ESCAPE  &kp W  &kp M  &kp R      &kp D            &kp J    &kp Q          &kp F              &kp U      &kp L    &kp P      &td2
-&mt LCTRL TAB  &kp K  &kp S  &tdn       &tdt             &tdg     &kp Y          &tda               &kp E      &kp I    &kp O      &kp MINUS
-&kp LSHFT      &kp Z  &tdh   &tdc       &tdv             &kp B    &kp SEMICOLON  &tdx               &kp COMMA  &kp DOT  &kp SLASH  &kp BACKSLASH
+&lt0 3 ESCAPE  &kp W  &kp D  &kp R      &kp M            &kp J    &kp Q          &kp F              &kp U      &kp L    &kp P      &td2
+&mt LCTRL TAB  &kp K  &kp S  &tdn       &tdt             &tdh     &kp Y          &tda               &kp E      &kp I    &kp O      &kp MINUS
+&kp LSHFT      &kp Z  &tdg   &tdc       &tdv             &kp B    &kp SEMICOLON  &tdx               &kp COMMA  &kp DOT  &kp SLASH  &kp BACKSLASH
                              &mkp LCLK  &mt LSHFT SPACE  &td1     &bsdel0        &eisu_lt0 1 ENTER
             >;
         };
@@ -248,9 +248,9 @@
         pointer_layer {
             label = "POINTER";
             bindings = <
-&lt0 3 ESCAPE  &kp W  &kp M  &kp R      &kp D  &kp J    &kp Q          &kp F              &kp U      &kp L    &kp P      &td2
-&mt LCTRL TAB  &kp K  &kp S  &tdn       &tdt   &tdg     &kp Y          &tda               &kp E      &kp I    &kp O      &kp MINUS
-&kp LSHFT      &kp Z  &tdh   &tdc       &tdv   &kp B    &kp SEMICOLON  &tdx               &kp COMMA  &kp DOT  &kp SLASH  &kp BACKSLASH
+&lt0 3 ESCAPE  &kp W  &kp D  &kp R      &kp M  &kp J    &kp Q          &kp F              &kp U      &kp L    &kp P      &td2
+&mt LCTRL TAB  &kp K  &kp S  &tdn       &tdt   &tdh     &kp Y          &tda               &kp E      &kp I    &kp O      &kp MINUS
+&kp LSHFT      &kp Z  &tdg   &tdc       &tdv   &kp B    &kp SEMICOLON  &tdx               &kp COMMA  &kp DOT  &kp SLASH  &kp BACKSLASH
                              &mkp LCLK  &mo 5  &mo 6    &bsdel0        &eisu_lt0 1 ENTER
             >;
         };
