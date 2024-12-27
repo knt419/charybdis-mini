@@ -208,10 +208,10 @@
         default_layer {
             label = "DEFAULT";
             bindings = <
-&lt0 3 ESCAPE  &kp W  &kp D  &kp R      &kp M            &kp J    &kp Q          &tdx               &kp U      &kp Y    &kp P      &td2
-&mt LCTRL TAB  &kp K  &kp S  &tdn       &tdt             &tdh     &kp F          &tda               &kp E      &kp I    &kp O      &kp MINUS
-&kp LSHFT      &kp Z  &tdg   &tdc       &tdv             &kp B    &kp SEMICOLON  &kp L              &kp COMMA  &kp DOT  &kp SLASH  &kp BACKSLASH
-                             &mkp LCLK  &mt LSHFT SPACE  &td1     &bsdel0        &eisu_lt0 1 ENTER
+&lt0 3 ESCAPE  &kp W  &kp D  &kp R      &kp M            &kp PERIOD    &kp Q          &tdx               &kp E  &kp Y      &kp P      &td2
+&mt LCTRL TAB  &kp S  &kp K  &tdn       &tdt             &tdh          &kp L          &tda               &kp I  &kp O      &kp U      &kp MINUS
+&kp LSHFT      &kp Z  &tdg   &tdc       &tdv             &kp B         &kp SEMICOLON  &kp J              &kp Y  &kp COMMA  &kp SLASH  &kp BACKSLASH
+                             &mkp LCLK  &mt LSHFT SPACE  &td1          &bsdel0        &eisu_lt0 1 ENTER
             >;
         };
 
@@ -248,10 +248,10 @@
         pointer_layer {
             label = "POINTER";
             bindings = <
-&lt0 3 ESCAPE  &kp W  &kp D  &kp R      &kp M  &kp J    &kp Q          &tdx               &kp U      &kp Y    &kp P      &td2
-&mt LCTRL TAB  &kp K  &kp S  &tdn       &tdt   &tdh     &kp F          &tda               &kp E      &kp I    &kp O      &kp MINUS
-&kp LSHFT      &kp Z  &tdg   &tdc       &tdv   &kp B    &kp SEMICOLON  &kp L              &kp COMMA  &kp DOT  &kp SLASH  &kp BACKSLASH
-                             &mkp LCLK  &mo 5  &mo 6    &bsdel0        &eisu_lt0 1 ENTER
+&lt0 3 ESCAPE  &kp W  &kp D  &kp R      &kp M  &kp PERIOD    &kp Q          &tdx               &kp E  &kp Y      &kp P      &td2
+&mt LCTRL TAB  &kp S  &kp K  &tdn       &tdt   &tdh          &kp L          &tda               &kp I  &kp O      &kp U      &kp MINUS
+&kp LSHFT      &kp Z  &tdg   &tdc       &tdv   &kp B         &kp SEMICOLON  &kp J              &kp Y  &kp COMMA  &kp SLASH  &kp BACKSLASH
+                             &mkp LCLK  &mo 5  &mo 6         &bsdel0        &eisu_lt0 1 ENTER
             >;
         };
 
