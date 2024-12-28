@@ -141,7 +141,7 @@
         tdn: tap_dance_n {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <160>;
+            tapping-term-ms = <170>;
             bindings = <&kp N>, <&dbl_ctrl>;
 
             label = "TDN";
@@ -150,7 +150,7 @@
         tdt: tap_dance_t {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <160>;
+            tapping-term-ms = <170>;
             bindings = <&kp T>, <&dbl_shft>;
 
             label = "TDT";
