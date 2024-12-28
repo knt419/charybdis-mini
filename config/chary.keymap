@@ -141,7 +141,7 @@
         tdn: tap_dance_n {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <130>;
             bindings = <&kp N>, <&dbl_ctrl>;
 
             label = "TDN";
@@ -150,7 +150,7 @@
         tdt: tap_dance_t {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <130>;
             bindings = <&kp T>, <&dbl_shft>;
 
             label = "TDT";
@@ -162,13 +162,14 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LSHFT &kp LSHFT>;
-            tap-ms = <40>;
+            wait-ms = <80>;
         };
 
         dbl_ctrl: dbl_ctrl {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LCTRL &kp LCTRL>;
+            wait-ms = <80>;
         };
 
         eisu_mo0: eisu_mo0 {
