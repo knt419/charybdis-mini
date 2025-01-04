@@ -142,7 +142,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <170>;
-            bindings = <&kp N>, <&dbl_ctrl>;
+            bindings = <&kp N>, <&dbl_shft>;
 
             label = "TDN";
         };
@@ -154,6 +154,15 @@
             bindings = <&kp T>, <&dbl_shft>;
 
             label = "TDT";
+        };
+
+        tdi: tap_dance_i {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <170>;
+            bindings = <&kp I>, <&dbl_ctrl>;
+
+            label = "TDI";
         };
     };
 
@@ -209,10 +218,10 @@
         default_layer {
             label = "DEFAULT";
             bindings = <
-&lt0 3 ESCAPE  &kp W  &kp D  &kp R      &kp M            &kp PERIOD    &kp Q          &tdx               &kp E  &kp F      &kp P      &td2
-&mt LCTRL TAB  &kp K  &kp S  &tdn       &tdt             &tdh          &kp L          &tda               &kp I  &kp O      &kp U      &kp MINUS
-&kp LSHFT      &kp Z  &tdg   &tdc       &tdv             &kp B         &kp SEMICOLON  &kp J              &kp Y  &kp COMMA  &kp SLASH  &kp BACKSLASH
-                             &mkp LCLK  &mt LSHFT SPACE  &td1          &bsdel0        &eisu_lt0 1 ENTER
+&lt0 3 ESCAPE  &kp W  &kp COMMA  &kp Y      &kp R            &kp Q    &kp P    &kp D              &kp E  &kp MINUS   &kp B      &td2
+&mt LCTRL TAB  &kp S  &kp U      &tdi       &tdn             &tdh     &tdg     &kp T              &tda   &kp O       &kp K      &kp SEMICOLON
+&kp LSHFT      &kp Z  &kp X      &tdc       &tdv             &kp F    &kp J    &kp M              &kp L  &kp PERIOD  &kp SLASH  &kp BACKSLASH
+                                 &mkp LCLK  &mt LSHFT SPACE  &td1     &bsdel0  &eisu_lt0 1 ENTER
             >;
         };
 
@@ -249,10 +258,10 @@
         pointer_layer {
             label = "POINTER";
             bindings = <
-&lt0 3 ESCAPE  &kp W  &kp D  &kp R      &kp M  &kp PERIOD    &kp Q          &tdx               &kp E  &kp F      &kp P      &td2
-&mt LCTRL TAB  &kp K  &kp S  &tdn       &tdt   &tdh          &kp L          &tda               &kp I  &kp O      &kp U      &kp MINUS
-&kp LSHFT      &kp Z  &tdg   &tdc       &tdv   &kp B         &kp SEMICOLON  &kp J              &kp Y  &kp COMMA  &kp SLASH  &kp BACKSLASH
-                             &mkp LCLK  &mo 5  &mo 6         &bsdel0        &eisu_lt0 1 ENTER
+&lt0 3 ESCAPE  &kp W  &kp COMMA  &kp Y      &kp R  &kp Q    &kp P    &kp D              &kp E  &kp MINUS   &kp B      &td2
+&mt LCTRL TAB  &kp S  &kp U      &tdi       &tdn   &tdh     &tdg     &kp T              &tda   &kp O       &kp K      &kp SEMICOLON
+&kp LSHFT      &kp Z  &kp X      &tdc       &tdv   &kp F    &kp J    &kp M              &kp L  &kp PERIOD  &kp SLASH  &kp BACKSLASH
+                                 &mkp LCLK  &mo 5  &mo 6    &bsdel0  &eisu_lt0 1 ENTER
             >;
         };
 
