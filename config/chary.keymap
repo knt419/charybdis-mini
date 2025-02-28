@@ -215,9 +215,14 @@
     combos {
         compatible = "zmk,combos";
 
-        bootloader {
+        bootloader-r {
             bindings = <&bootloader>;
             key-positions = <11 23>;
+        };
+
+        bootloader_l {
+            bindings = <&bootloader>;
+            key-positions = <0 12>;
         };
     };
 
@@ -228,8 +233,8 @@
             label = "DEFAULT";
             bindings = <
 &lt0 3 ESCAPE  &kp W  &kp PERIOD  &kp MINUS  &tdg             &kp P    &kp Q    &kp D              &kp E  &kp COMMA  &kp J      &td2
-&mt LCTRL TAB  &kp K  &kp I       &tda       &tdt             &kp R    &kp M    &kp N              &kp O  &kp U      &kp S      &kp SEMICOLON
-&kp LSHFT      &kp Z  &kp L       &tdc       &tdh             &kp B    &kp F    &kp Y              &tdv   &kp X      &kp SLASH  &kp BACKSLASH
+&mt LCTRL TAB  &kp K  &kp I       &kp A      &tdt             &kp H    &kp R    &kp N              &kp O  &kp U      &kp S      &kp SEMICOLON
+&kp LSHFT      &kp F  &kp X       &tdc       &kp M            &kp Z    &kp B    &kp Y              &tdv   &kp L      &kp SLASH  &kp BACKSLASH
                                   &mkp LCLK  &mt LSHFT SPACE  &td1     &bsdel0  &eisu_lt0 1 ENTER
             >;
         };
@@ -268,8 +273,8 @@
             label = "POINTER";
             bindings = <
 &lt0 3 ESCAPE  &kp W  &kp DOT  &kp MINUS  &tdg   &kp P    &kp Q    &kp D              &kp E  &kp COMMA  &kp J      &td2
-&mt LCTRL TAB  &kp K  &kp I    &tda       &tdt   &kp R    &kp M    &kp N              &kp O  &kp U      &kp S      &kp SEMICOLON
-&kp LSHFT      &kp Z  &kp L    &tdc       &tdh   &kp B    &kp F    &kp Y              &tdv   &kp X      &kp SLASH  &kp BACKSLASH
+&mt LCTRL TAB  &kp K  &kp I    &kp A      &tdt   &kp H    &kp R    &kp N              &kp O  &kp U      &kp S      &kp SEMICOLON
+&kp LSHFT      &kp F  &kp X    &tdc       &kp M  &kp Z    &kp B    &kp Y              &tdv   &kp L      &kp SLASH  &kp BACKSLASH
                                &mkp LCLK  &mo 5  &mo 6    &bsdel0  &eisu_lt0 1 ENTER
             >;
         };
