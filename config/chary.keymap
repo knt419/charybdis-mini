@@ -124,7 +124,7 @@
         bsdel0: bsdel0 {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&lt0 2 BSPC>, <&kp DEL>;
+            bindings = <&lt0 5 BSPC>, <&kp DEL>;
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
@@ -232,50 +232,20 @@
         default_layer {
             label = "DEFAULT";
             bindings = <
-&lt0 3 ESCAPE  &kp W  &kp PERIOD  &kp MINUS  &tdg             &kp P    &kp Q    &kp D              &kp E  &kp COMMA  &kp J      &td2
+&lt0 6 ESCAPE  &kp W  &kp PERIOD  &kp MINUS  &tdg             &kp P    &kp Q    &kp D              &kp E  &kp COMMA  &kp J      &td2
 &mt LCTRL TAB  &kp K  &kp I       &kp A      &tdt             &kp H    &kp R    &kp N              &kp O  &kp U      &kp S      &kp SEMICOLON
 &kp LSHFT      &kp F  &kp X       &tdc       &kp M            &kp Z    &kp B    &kp Y              &tdv   &kp L      &kp SLASH  &kp BACKSLASH
-                                  &mkp LCLK  &mt LSHFT SPACE  &td1     &bsdel0  &eisu_lt0 1 ENTER
-            >;
-        };
-
-        number_layer {
-            label = "NUMBER";
-            bindings = <
-&kp GRAVE  &kp F1  &kp F2     &kp F3     &kp F4           &kp F5        &kp F6    &kp F7        &kp F8  &kp F9     &kp F10  &kp BSPC
-&trans     &td4    &dbl_shft  &dbl_ctrl  &kp EQUAL        &kp PLUS      &kp LEFT  &kp DOWN      &kp UP  &kp RIGHT  &td5     &kp ENTER
-&trans     &kp N1  &kp N2     &kp N3     &kp N4           &kp N5        &kp N6    &kp N7        &kp N8  &kp N9     &kp N0   &trans
-                              &mkp RCLK  &mt LSHFT SPACE  &kp PERIOD    &none     &lt0 1 ENTER
-            >;
-        };
-
-        macro_layer {
-            label = "MACRO";
-            bindings = <
-&gresc  &kp F1     &kp F2     &kp F3     &kp F4     &kp F5           &kp F6    &kp F7         &kp F8     &kp F9     &kp F10  &kp BSPC
-&trans  &kp LC(A)  &trans     &dbl_ctrl  &dbl_shft  &kp LS(LC(V))    &kp LEFT  &kp DOWN       &kp UP     &kp RIGHT  &trans   &kp ENTER
-&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LG(V)        &kp HOME  &kp PAGE_DOWN  &kp PG_UP  &kp END    &trans   &trans
-                              &mkp MCLK  &kp LANG1  &kp LANG2        &bsdel0   &none
-            >;
-        };
-
-        sys_layer {
-            label = "SYS";
-            bindings = <
-&none        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &bt BT_CLR
-&bootloader  &none         &none         &none         &none         &out OUT_USB    &out OUT_USB  &none         &none         &none         &none           &sys_reset
-&bootloader  &none         &none         &none         &none         &out OUT_BLE    &out OUT_BLE  &none         &none         &none         &studio_unlock  &bootloader
-                                         &none         &none         &lt 3 LALT      &bsdel0       &lt0 1 ENTER
+                                  &mkp LCLK  &mt LSHFT SPACE  &td1     &bsdel0  &eisu_lt0 4 ENTER
             >;
         };
 
         pointer_layer {
             label = "POINTER";
             bindings = <
-&lt0 3 ESCAPE  &kp W  &kp DOT  &kp MINUS  &tdg   &kp P    &kp Q    &kp D              &kp E  &kp COMMA  &kp J      &td2
-&mt LCTRL TAB  &kp K  &kp I    &kp A      &tdt   &kp H    &kp R    &kp N              &kp O  &kp U      &kp S      &kp SEMICOLON
-&kp LSHFT      &kp F  &kp X    &tdc       &kp M  &kp Z    &kp B    &kp Y              &tdv   &kp L      &kp SLASH  &kp BACKSLASH
-                               &mkp LCLK  &mo 5  &mo 6    &bsdel0  &eisu_lt0 1 ENTER
+&trans  &trans  &trans  &trans     &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans     &tdt    &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans     &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &mkp LCLK  &mo 2   &mo 3     &trans  &trans
             >;
         };
 
@@ -296,6 +266,36 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans    &trans  &trans
+            >;
+        };
+
+        number_layer {
+            label = "NUMBER";
+            bindings = <
+&kp GRAVE  &kp F1  &kp F2     &kp F3     &kp F4           &kp F5        &kp F6    &kp F7        &kp F8  &kp F9     &kp F10  &kp BSPC
+&trans     &td4    &dbl_shft  &dbl_ctrl  &kp EQUAL        &kp PLUS      &kp LEFT  &kp DOWN      &kp UP  &kp RIGHT  &td5     &kp ENTER
+&trans     &kp N1  &kp N2     &kp N3     &kp N4           &kp N5        &kp N6    &kp N7        &kp N8  &kp N9     &kp N0   &trans
+                              &mkp RCLK  &mt LSHFT SPACE  &kp PERIOD    &none     &lt0 4 ENTER
+            >;
+        };
+
+        macro_layer {
+            label = "MACRO";
+            bindings = <
+&gresc  &kp F1     &kp F2     &kp F3     &kp F4     &kp F5           &kp F6    &kp F7         &kp F8     &kp F9     &kp F10  &kp BSPC
+&trans  &kp LC(A)  &trans     &dbl_ctrl  &dbl_shft  &kp LS(LC(V))    &kp LEFT  &kp DOWN       &kp UP     &kp RIGHT  &trans   &kp ENTER
+&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LG(V)        &kp HOME  &kp PAGE_DOWN  &kp PG_UP  &kp END    &trans   &trans
+                              &mkp MCLK  &kp LANG1  &kp LANG2        &bsdel0   &none
+            >;
+        };
+
+        sys_layer {
+            label = "SYS";
+            bindings = <
+&none        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &bt BT_CLR
+&bootloader  &none         &none         &none         &none         &out OUT_USB    &out OUT_USB  &none         &none         &none         &none           &sys_reset
+&bootloader  &none         &none         &none         &none         &out OUT_BLE    &out OUT_BLE  &none         &none         &none         &studio_unlock  &bootloader
+                                         &none         &none         &lt 6 LALT      &bsdel0       &lt0 4 ENTER
             >;
         };
     };
