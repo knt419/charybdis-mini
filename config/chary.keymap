@@ -232,9 +232,9 @@
         default_layer {
             label = "DEFAULT";
             bindings = <
-&lt0 6 ESCAPE  &kp W  &kp PERIOD  &kp MINUS  &tdg             &kp Z    &kp Q    &kp D              &kp E  &kp COMMA  &kp P      &td2
-&mt LCTRL TAB  &kp K  &kp I       &kp A      &tdt             &kp H    &kp R    &kp N              &kp O  &kp U      &kp S      &kp SEMICOLON
-&kp LSHFT      &kp F  &kp X       &tdc       &kp M            &kp J    &kp B    &kp Y              &tdv   &kp L      &kp SLASH  &kp BACKSLASH
+&lt0 6 ESCAPE  &kp Q  &kp G       &kp MINUS  &caps_word       &kp Z    &kp X    &kp D              &kp E  &kp COMMA  &kp P      &td2
+&mt LCTRL TAB  &kp I  &kp T       &kp A      &tdt             &kp H    &kp R    &kp N              &kp O  &kp U      &kp S      &kp SEMICOLON
+&kp LSHFT      &kp F  &kp PERIOD  &tdc       &kp M            &kp J    &kp B    &kp Y              &tdv   &kp L      &kp SLASH  &kp BACKSLASH
                                   &mkp LCLK  &mt LSHFT SPACE  &td1     &bsdel0  &eisu_lt0 4 ENTER
             >;
         };
