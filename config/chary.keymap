@@ -234,7 +234,7 @@
             bindings = <
 &lt0 6 ESCAPE  &kp Q  &kp G       &kp MINUS  &kp W            &kp Z    &kp X    &kp D              &kp E  &kp COMMA  &kp P      &td2
 &mt LCTRL TAB  &kp I  &kp T       &kp A      &kp K            &kp H    &kp R    &kp N              &kp O  &kp U      &kp S      &kp SEMICOLON
-&kp LSHFT      &kp F  &kp PERIOD  &tdc       &kp M            &kp J    &kp B    &kp Y              &tdv   &kp L      &kp SLASH  &kp BACKSLASH
+&kp LSHFT      &kp F  &kp PERIOD  &tdc       &kp M            &kp B    &kp J    &kp Y              &tdv   &kp L      &kp SLASH  &kp BACKSLASH
                                   &mkp LCLK  &mt LSHFT SPACE  &td1     &bsdel0  &eisu_lt0 4 ENTER
             >;
         };
