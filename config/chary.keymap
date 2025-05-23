@@ -2,7 +2,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 
 #define DEFAULT 0
@@ -26,72 +25,18 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
-            bindings = <&kp LPAR>, <&kp LBRC>, <&kp LBKT>;
+            bindings = <&kp LPAR>, <&kp LBRC>;
 
-            label = "({[";
+            label = "({";
         };
 
         td5: tap_dance_5 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
-            bindings = <&kp RPAR>, <&kp RBRC>, <&kp RBKT>;
+            bindings = <&kp RPAR>, <&kp RBRC>;
 
-            label = ")}]";
-        };
-
-        tda: tap_dance_a {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp A>, <&dbl_ctrl>;
-
-            label = "A&@";
-        };
-
-        tdh: tap_dance_h {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <300>;
-            bindings = <&kp H>, <&kp LC(V)>;
-
-            label = "H&PASTE";
-        };
-
-        tdg: tap_dance_g {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp G>, <&kp AMPERSAND>;
-
-            label = "G&";
-        };
-
-        tdx: tap_dance_x {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp X>, <&kp ASTERISK>;
-
-            label = "X&*";
-        };
-
-        tdc: tap_dance_c {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp C>, <&kp LC(C)>;
-
-            label = "C&COPY";
-        };
-
-        tdv: tap_dance_v {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <300>;
-            bindings = <&kp V>, <&kp LC(V)>, <&kp LS(LC(V))>;
-
-            label = "V&PASTE";
+            label = ")}";
         };
 
         lt0: layer_tap_0 {
@@ -101,24 +46,6 @@
             tapping-term-ms = <200>;
             quick-tap-ms = <200>;
             bindings = <&mo>, <&kp>;
-        };
-
-        eisu_lt0: eisu_layer_tap_0 {
-            compatible = "zmk,behavior-hold-tap";
-            flavor = "tap-preferred";
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <200>;
-            bindings = <&eisu_mo0>, <&kp>;
-        };
-
-        mt0: mod_tap_0 {
-            compatible = "zmk,behavior-hold-tap";
-            flavor = "tap-preferred";
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <200>;
-            bindings = <&kp>, <&kp>;
         };
 
         bsdel0: bsdel0 {
@@ -138,31 +65,58 @@
             label = "TD2";
         };
 
-        tdn: tap_dance_n {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <170>;
-            bindings = <&kp N>, <&dbl_shft>;
+        left_kakko: left_kakko {
+            compatible = "zmk,behavior-mod-morph";
+            label = "LEFT_KAKKO";
+            bindings = <&td4>, <&kp LEFT_BRACKET>;
 
-            label = "TDN";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        tdt: tap_dance_t {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <170>;
-            bindings = <&kp T>, <&dbl_shft>;
+        right_kakko: right_kakko {
+            compatible = "zmk,behavior-mod-morph";
+            label = "RIGHT_KAKKO";
+            bindings = <&td5>, <&kp RIGHT_BRACKET>;
 
-            label = "TDT";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        tdi: tap_dance_i {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <170>;
-            bindings = <&kp I>, <&dbl_ctrl>;
+        left_home: left_home {
+            compatible = "zmk,behavior-mod-morph";
+            label = "LEFT_HOME";
+            bindings = <&kp LEFT_ARROW>, <&kp HOME>;
 
-            label = "TDI";
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
+        };
+
+        right_end: right_end {
+            compatible = "zmk,behavior-mod-morph";
+            label = "RIGHT_END";
+            bindings = <&kp RIGHT>, <&kp END>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
+        };
+
+        up_pageup: up_pageup {
+            compatible = "zmk,behavior-mod-morph";
+            label = "UP_PAGEUP";
+            bindings = <&kp UP_ARROW>, <&kp PAGE_UP>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
+        };
+
+        down_pagedown: down_pagedown {
+            compatible = "zmk,behavior-mod-morph";
+            label = "DOWN_PAGEDOWN";
+            bindings = <&kp DOWN_ARROW>, <&kp PAGE_DOWN>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
         };
     };
 
@@ -219,11 +173,6 @@
             bindings = <&bootloader>;
             key-positions = <11 23>;
         };
-
-        bootloader_l {
-            bindings = <&bootloader>;
-            key-positions = <0 12>;
-        };
     };
 
     keymap {
@@ -232,10 +181,10 @@
         default_layer {
             label = "DEFAULT";
             bindings = <
-&lt0 6 ESCAPE  &kp Q  &kp G       &kp MINUS  &kp W            &kp Z    &kp X    &kp D              &kp E  &kp COMMA  &kp P      &td2
-&mt LCTRL TAB  &kp I  &kp T       &kp A      &kp K            &kp H    &kp R    &kp N              &kp O  &kp U      &kp S      &kp SEMICOLON
-&kp LSHFT      &kp F  &kp PERIOD  &tdc       &kp M            &kp B    &kp J    &kp Y              &tdv   &kp L      &kp SLASH  &kp BACKSLASH
-                                  &mkp LCLK  &mt LSHFT SPACE  &td1     &bsdel0  &eisu_lt0 4 ENTER
+&lt0 6 ESCAPE  &kp Q  &kp G       &kp MINUS  &kp W            &kp Z    &kp X    &kp D        &kp E  &kp COMMA  &kp P      &td2
+&mt LCTRL TAB  &kp I  &kp T       &kp A      &kp K            &kp H    &kp R    &kp N        &kp O  &kp U      &kp S      &kp SEMICOLON
+&kp LSHFT      &kp F  &kp PERIOD  &kp C      &kp M            &kp B    &kp J    &kp Y        &kp V  &kp L      &kp SLASH  &kp BACKSLASH
+                                  &mkp LCLK  &mt LSHFT SPACE  &td1     &bsdel0  &lt 4 ENTER
             >;
         };
 
@@ -243,7 +192,7 @@
             label = "POINTER";
             bindings = <
 &trans  &trans  &trans  &trans     &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans     &tdt    &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans     &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans     &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                         &mkp LCLK  &mo 2   &mo 3     &trans  &trans
             >;
@@ -272,10 +221,10 @@
         number_layer {
             label = "NUMBER";
             bindings = <
-&kp GRAVE  &kp F1  &kp F2     &kp F3     &kp F4           &kp F5        &kp F6    &kp F7        &kp F8  &kp F9     &kp F10  &kp BSPC
-&trans     &td4    &dbl_shft  &dbl_ctrl  &kp EQUAL        &kp PLUS      &kp LEFT  &kp DOWN      &kp UP  &kp RIGHT  &td5     &kp ENTER
-&trans     &kp N1  &kp N2     &kp N3     &kp N4           &kp N5        &kp N6    &kp N7        &kp N8  &kp N9     &kp N0   &trans
-                              &mkp RCLK  &mt LSHFT SPACE  &kp PERIOD    &none     &lt0 4 ENTER
+&kp GRAVE  &kp F1       &kp F2     &kp F3     &kp F4           &kp F5        &kp F6      &kp F7          &kp F8      &kp F9      &kp F10       &kp BSPC
+&trans     &left_kakko  &dbl_shft  &dbl_ctrl  &kp EQUAL        &kp PLUS      &left_home  &down_pagedown  &up_pageup  &right_end  &right_kakko  &kp ENTER
+&trans     &kp N1       &kp N2     &kp N3     &kp N4           &kp N5        &kp N6      &kp N7          &kp N8      &kp N9      &kp N0        &kp TILDE
+                                   &mkp RCLK  &mt LSHFT SPACE  &kp PERIOD    &none       &lt0 4 ENTER
             >;
         };
 
@@ -292,10 +241,10 @@
         sys_layer {
             label = "SYS";
             bindings = <
-&none        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &bt BT_CLR
-&bootloader  &none         &none         &none         &none         &out OUT_USB    &out OUT_USB  &none         &none         &none         &none           &sys_reset
-&bootloader  &none         &none         &none         &none         &out OUT_BLE    &out OUT_BLE  &none         &none         &none         &studio_unlock  &bootloader
-                                         &none         &none         &lt 6 LALT      &bsdel0       &lt0 4 ENTER
+&none        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none
+&bootloader  &bt BT_CLR    &none         &none         &none         &none           &bt BT_CLR    &none         &none         &none         &none         &none
+&none        &none         &none         &none         &none         &none           &none         &none         &none         &none         &none         &none
+                                         &none         &none         &none           &none         &none
             >;
         };
     };
