@@ -240,7 +240,7 @@
             label = "NUMBER";
             bindings = <
 &kp GRAVE  &F1_F11      &F2_F12    &kp F3        &kp F4           &kp F5       &kp F6      &kp F7          &kp F8      &kp F9      &kp F10       &kp CARET
-&trans     &left_kakko  &kp SLASH  &kp ASTERISK  &kp PLUS         &kp MINUS    &left_home  &down_pagedown  &up_pageup  &right_end  &right_kakko  &tog 4
+&trans     &left_kakko  &kp SLASH  &kp ASTERISK  &kp PLUS         &kp MINUS    &left_home  &down_pagedown  &up_pageup  &right_end  &right_kakko  &to 4
 &trans     &kp N1       &kp N2     &kp N3        &kp N4           &kp N5       &kp N6      &kp N7          &kp N8      &kp N9      &kp N0        &kp PERIOD
                                    &mkp RCLK     &mt LSHFT SPACE  &kp EQUAL    &none       &lt0 4 ENTER
             >;
