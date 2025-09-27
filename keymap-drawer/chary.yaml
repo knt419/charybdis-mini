@@ -303,11 +303,14 @@ combos:
   l: [DEFAULT]
 - p: [2, 3]
   k: '{}'
+  l: [DEFAULT, MOUSE]
 - p: [26, 27]
   k: '[]'
+  l: [DEFAULT, MOUSE]
 - p: [14, 15]
   k: ()
-- p: [8, 7]
+  l: [DEFAULT, MOUSE]
+- p: [8, 9]
   k: Alt+`
   l: [DEFAULT, MOUSE]
 - p: [25, 26]
