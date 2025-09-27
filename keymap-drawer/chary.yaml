@@ -12,7 +12,7 @@ layers:
   - {t: E, h: Gui+E}
   - L
   - P
-  - {t: '''', s: '"'}
+  - {t: '''', h: '$$material:screenshot_region$$', s: '"'}
   - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:apple-keyboard-control$$'}
   - I
   - T
@@ -24,8 +24,8 @@ layers:
   - O
   - U
   - S
-  - {t: ;, s: ':'}
-  - $$mdi:apple-keyboard-shift$$
+  - {t: ;, h: ':', s: ':'}
+  - {t: '$$mdi:microphone-off$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: /, s: '?'}
   - F
   - {t: C, h: Ctl+C}
