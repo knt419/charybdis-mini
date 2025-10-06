@@ -191,14 +191,14 @@ layers:
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-right-bold$$
-  - '|'
+  - '%'
   - )
   - {t: '[', s: '{'}
   - '0'
   - '1'
   - '2'
   - '3'
-  - '%'
+  - ':'
   - '!'
   - '@'
   - '#'
