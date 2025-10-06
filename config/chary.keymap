@@ -280,9 +280,9 @@
 
         NUMBER {
             bindings = <
-&kp LEFT_BRACE        &kp ASTERISK  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9        &kp PLUS               &kp TILDE        &backquote  &quote  &doublequote  &caret   &kp RIGHT_BRACE
-&kp LEFT_PARENTHESIS  &kp SLASH     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6        &kp MINUS              &kp LEFT         &kp DOWN    &kp UP  &kp RIGHT     &pipe    &kp RIGHT_PARENTHESIS
-&kp LEFT_BRACKET      &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3        &kp PERCENT            &kp EXCLAMATION  &at         &hash   &amp          &dollar  &kp RIGHT_BRACKET
+&kp LEFT_BRACE        &kp ASTERISK  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9        &kp PLUS               &kp TILDE        &backquote  &quote  &doublequote  &caret       &kp RIGHT_BRACE
+&kp LEFT_PARENTHESIS  &kp SLASH     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6        &kp MINUS              &kp LEFT         &kp DOWN    &kp UP  &kp RIGHT     &kp PERCENT  &kp RIGHT_PARENTHESIS
+&kp LEFT_BRACKET      &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3        &kp COLON              &kp EXCLAMATION  &at         &hash   &amp          &dollar      &kp RIGHT_BRACKET
                                                   &mkp RCLK     &mt LEFT_GUI EQUAL  &mt LEFT_ALT PERIOD    &trans           &trans
             >;
         };
