@@ -39,7 +39,7 @@ layers:
   - {t: \, s: '|'}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: LANGUAGE 1, h: LANGUAGE 2}
+  - {t: LANGUAGE 1, h: '$$mdi:apple-keyboard-command$$'}
   - {t: '$$mdi:backspace$$', h: FUNCTION, s: '$$mdi:backspace-reverse-outline$$'}
   - {t: '$$mdi:keyboard-return$$', h: NUMBER}
   MOUSE:
@@ -206,7 +206,7 @@ layers:
   - $
   - {t: ']', s: '}'}
   - $$mdi:mouse-right-click-outline$$
-  - {t: '=', h: '$$mdi:apple-keyboard-command$$', s: +}
+  - {t: '=', h: '$$mdi:apple-keyboard-shift$$', s: +}
   - {t: ., h: '$$mdi:apple-keyboard-option$$'}
   - {t: '$$tabler:fold-down$$', type: trans}
   - {type: held}
@@ -322,3 +322,5 @@ combos:
 - p: [15, 16]
   k: '&DBLSFT'
   l: [DEFAULT, MOUSE]
+- p: [20, 21]
+  k: {t: LANGUAGE 1, h: LANGUAGE 2}
