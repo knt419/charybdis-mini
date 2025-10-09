@@ -113,6 +113,11 @@
             key-positions = <15 16>;
             layers = <0 1>;
         };
+
+        ime_onoff {
+            bindings = <&holdtap LANGUAGE_2 LANGUAGE_1>;
+            key-positions = <20 21>;
+        };
     };
 
     macros {
@@ -244,10 +249,10 @@
 
         DEFAULT {
             bindings = <
-&lt 6 ESCAPE              &kp Q      &kp W  &kp MINUS         &kp R                 &kp Z                             &holdtap LC(X) X  &kp D        &holdtap LG(E) E  &kp L                &kp P                     &holdtap PRINTSCREEN SQT
-&mt LCTRL TAB             &kp I      &kp T  &holdtap LC(A) A  &kp K                 &kp G                             &kp H             &kp N        &kp O             &kp U                &kp S                     &holdtap COLON SEMICOLON
-&mt LEFT_SHIFT LS(LC(M))  &kp SLASH  &kp F  &holdtap LC(C) C  &kp M                 &kp B                             &kp J             &kp Y        &kp V             &holdtap EXCL COMMA  &holdtap QUESTION PERIOD  &kp BACKSLASH
-                                            &mkp LCLK         &mt LEFT_SHIFT SPACE  &holdtap LANGUAGE_2 LANGUAGE_1    &lt_bsdel 5 0     &lt 4 ENTER
+&lt 6 ESCAPE              &kp Q      &kp W  &kp MINUS         &kp R                 &kp Z                      &holdtap LC(X) X  &kp D        &holdtap LG(E) E  &kp L                &kp P                     &holdtap PRINTSCREEN SQT
+&mt LCTRL TAB             &kp I      &kp T  &holdtap LC(A) A  &kp K                 &kp G                      &kp H             &kp N        &kp O             &kp U                &kp S                     &holdtap COLON SEMICOLON
+&mt LEFT_SHIFT LS(LC(M))  &kp SLASH  &kp F  &holdtap LC(C) C  &kp M                 &kp B                      &kp J             &kp Y        &kp V             &holdtap EXCL COMMA  &holdtap QUESTION PERIOD  &kp BACKSLASH
+                                            &mkp LCLK         &mt LEFT_SHIFT SPACE  &mt LEFT_GUI LANGUAGE_1    &lt_bsdel 5 0     &lt 4 ENTER
             >;
         };
 
@@ -280,10 +285,10 @@
 
         NUMBER {
             bindings = <
-&kp LEFT_BRACE        &kp ASTERISK  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9        &kp PLUS               &kp TILDE        &backquote  &quote  &doublequote  &caret       &kp RIGHT_BRACE
-&kp LEFT_PARENTHESIS  &kp SLASH     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6        &kp MINUS              &kp LEFT         &kp DOWN    &kp UP  &kp RIGHT     &kp PERCENT  &kp RIGHT_PARENTHESIS
-&kp LEFT_BRACKET      &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3        &kp COLON              &kp EXCLAMATION  &at         &hash   &amp          &dollar      &kp RIGHT_BRACKET
-                                                  &mkp RCLK     &mt LEFT_GUI EQUAL  &mt LEFT_ALT PERIOD    &trans           &trans
+&kp LEFT_BRACE        &kp ASTERISK  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9          &kp PLUS               &kp TILDE        &backquote  &quote  &doublequote  &caret       &kp RIGHT_BRACE
+&kp LEFT_PARENTHESIS  &kp SLASH     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6          &kp MINUS              &kp LEFT         &kp DOWN    &kp UP  &kp RIGHT     &kp PERCENT  &kp RIGHT_PARENTHESIS
+&kp LEFT_BRACKET      &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3          &kp COLON              &kp EXCLAMATION  &at         &hash   &amp          &dollar      &kp RIGHT_BRACKET
+                                                  &mkp RCLK     &mt LEFT_SHIFT EQUAL  &mt LEFT_ALT PERIOD    &trans           &trans
             >;
         };
 
