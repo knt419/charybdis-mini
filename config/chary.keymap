@@ -118,6 +118,18 @@
             bindings = <&holdtap LANGUAGE_2 LANGUAGE_1>;
             key-positions = <20 21>;
         };
+
+        back {
+            bindings = <&kp LA(LEFT)>;
+            key-positions = <13 14>;
+            layers = <0 2>;
+        };
+
+        forward {
+            bindings = <&kp LA(RIGHT)>;
+            key-positions = <21 22>;
+            layers = <0 2>;
+        };
     };
 
     macros {
