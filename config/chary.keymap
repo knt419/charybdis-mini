@@ -53,6 +53,14 @@
             require-prior-idle-ms = <150>;
             flavor = "tap-preferred";
         };
+
+        mkp_layer: mkp_layer {
+            compatible = "zmk,behavior-hold-tap";
+            bindings = <&mo>, <&mkp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
     };
 
     combos {
@@ -270,10 +278,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans        &trans           &trans        &trans     &trans  &trans     &trans     &trans
-&trans  &trans  &trans  &trans  &trans        &trans           &trans        &trans     &trans  &trans     &trans     &trans
-&trans  &trans  &trans  &trans  &kp LA(LEFT)  &kp LA(RIGHT)    &kp LA(LEFT)  &mkp LCLK  &mo 2   &mkp MCLK  &mkp RCLK  &kp LA(RIGHT)
-                        &trans  &mo 2         &mo 3            &trans        &trans
+&trans  &trans  &trans  &trans  &trans             &trans               &trans  &trans     &trans             &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans             &trans               &trans  &trans     &trans             &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans             &trans               &trans  &mkp LCLK  &mkp_layer 2 MCLK  &mkp RCLK  &trans  &trans
+                        &trans  &mkp_layer 2 MCLK  &mkp_layer 3 RCLK    &trans  &trans
             >;
         };
 
