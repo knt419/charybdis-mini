@@ -169,7 +169,7 @@ layers:
   - {t: '$$tabler:fold-down$$', type: trans}
   - {t: '$$tabler:fold-down$$', type: trans}
   NUMBER:
-  - '{'
+  - {t: '$$tabler:fold-down$$', type: trans}
   - '*'
   - '7'
   - '8'
@@ -180,8 +180,8 @@ layers:
   - ''''
   - '"'
   - ^
-  - '}'
-  - (
+  - {t: '$$tabler:fold-down$$', type: trans}
+  - '%'
   - {t: /, s: '?'}
   - '4'
   - '5'
@@ -191,9 +191,9 @@ layers:
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-right-bold$$
-  - '%'
-  - )
-  - {t: '[', s: '{'}
+  - {t: \, s: '|'}
+  - '|'
+  - {t: '$$tabler:fold-down$$', type: trans}
   - '0'
   - '1'
   - '2'
@@ -204,7 +204,7 @@ layers:
   - '#'
   - '&'
   - $
-  - {t: ']', s: '}'}
+  - {t: '$$tabler:fold-down$$', type: trans}
   - $$mdi:mouse-right-click-outline$$
   - {t: '=', h: '$$mdi:apple-keyboard-shift$$', s: +}
   - {t: ., h: '$$mdi:apple-keyboard-option$$'}
@@ -212,7 +212,7 @@ layers:
   - {type: held}
   FUNCTION:
   - {t: '$$tabler:fold-down$$', type: trans}
-  - {t: '$$tabler:fold-down$$', type: trans}
+  - '{'
   - F7
   - F8
   - F9
@@ -221,10 +221,10 @@ layers:
   - $$mdi:backspace-reverse-outline$$
   - $$material:screenshot_region$$
   - PAUSE BREAK
+  - '}'
   - {t: '$$tabler:fold-down$$', type: trans}
   - {t: '$$tabler:fold-down$$', type: trans}
-  - {t: '$$tabler:fold-down$$', type: trans}
-  - {t: '$$tabler:fold-down$$', type: trans}
+  - (
   - F4
   - F5
   - F6
@@ -233,10 +233,10 @@ layers:
   - PgDn
   - PG UP
   - END
+  - )
   - {t: '$$tabler:fold-down$$', type: trans}
   - {t: '$$tabler:fold-down$$', type: trans}
-  - {t: '$$tabler:fold-down$$', type: trans}
-  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: '[', s: '{'}
   - F1
   - F2
   - F3
@@ -245,7 +245,7 @@ layers:
   - {t: '$$tabler:fold-down$$', type: trans}
   - {t: '$$tabler:fold-down$$', type: trans}
   - {t: '$$tabler:fold-down$$', type: trans}
-  - {t: '$$tabler:fold-down$$', type: trans}
+  - {t: ']', s: '}'}
   - {t: '$$tabler:fold-down$$', type: trans}
   - $$mdi:mouse-scroll-wheel$$
   - Ctl+Z
@@ -297,10 +297,10 @@ layers:
 combos:
 - p: [9, 10]
   k: '&winmvright'
-  l: [DEFAULT]
+  l: [DEFAULT, MOUSE]
 - p: [1, 2]
   k: '&winmvleft'
-  l: [DEFAULT]
+  l: [DEFAULT, MOUSE]
 - p: [2, 3]
   k: '{}'
   l: [DEFAULT, MOUSE]
@@ -324,9 +324,10 @@ combos:
   l: [DEFAULT, MOUSE]
 - p: [20, 21]
   k: {t: LANGUAGE 1, h: LANGUAGE 2}
+  l: [DEFAULT, MOUSE]
 - p: [13, 14]
   k: Alt+$$mdi:arrow-left-bold$$
-  l: [DEFAULT, SCROLL]
+  l: [DEFAULT, MOUSE]
 - p: [21, 22]
   k: Alt+$$mdi:arrow-right-bold$$
-  l: [DEFAULT, SCROLL]
+  l: [DEFAULT, MOUSE]
