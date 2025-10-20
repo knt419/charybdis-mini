@@ -36,7 +36,7 @@ layers:
   - V
   - {t: ',', h: '!', s: <}
   - {t: ., h: '?'}
-  - {t: \, s: '|'}
+  - {t: '&right_arrow', h: '&down_arrow', s: '&left_arrow'}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: LANGUAGE 1, h: '$$mdi:apple-keyboard-command$$'}
