@@ -70,14 +70,14 @@
             bindings = <&winmvright>;
             key-positions = <9 10>;
             slow-release;
-            layers = <0>;
+            layers = <0 1>;
         };
 
         win_mv_left {
             bindings = <&winmvleft>;
             key-positions = <1 2>;
             slow-release;
-            layers = <0>;
+            layers = <0 1>;
         };
 
         braces {
@@ -125,18 +125,19 @@
         ime_onoff {
             bindings = <&holdtap LANGUAGE_2 LANGUAGE_1>;
             key-positions = <20 21>;
+            layers = <0 1>;
         };
 
         back {
             bindings = <&kp LA(LEFT)>;
             key-positions = <13 14>;
-            layers = <0 2>;
+            layers = <0 1>;
         };
 
         forward {
             bindings = <&kp LA(RIGHT)>;
             key-positions = <21 22>;
-            layers = <0 2>;
+            layers = <0 1>;
         };
     };
 
@@ -305,19 +306,19 @@
 
         NUMBER {
             bindings = <
-&kp LEFT_BRACE        &kp ASTERISK  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9          &kp PLUS               &kp TILDE        &backquote  &quote  &doublequote  &caret       &kp RIGHT_BRACE
-&kp LEFT_PARENTHESIS  &kp SLASH     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6          &kp MINUS              &kp LEFT         &kp DOWN    &kp UP  &kp RIGHT     &kp PERCENT  &kp RIGHT_PARENTHESIS
-&kp LEFT_BRACKET      &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3          &kp COLON              &kp EXCLAMATION  &at         &hash   &amp          &dollar      &kp RIGHT_BRACKET
-                                                  &mkp RCLK     &mt LEFT_SHIFT EQUAL  &mt LEFT_ALT PERIOD    &trans           &trans
+&trans       &kp ASTERISK  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9          &kp PLUS               &kp TILDE        &backquote  &quote  &doublequote  &caret         &trans
+&kp PERCENT  &kp SLASH     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6          &kp MINUS              &kp LEFT         &kp DOWN    &kp UP  &kp RIGHT     &kp BACKSLASH  &kp PIPE
+&trans       &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3          &kp COLON              &kp EXCLAMATION  &at         &hash   &amp          &dollar        &trans
+                                         &mkp RCLK     &mt LEFT_SHIFT EQUAL  &mt LEFT_ALT PERIOD    &trans           &trans
             >;
         };
 
         FUNCTION {
             bindings = <
-&trans  &trans  &kp F7  &kp F8     &kp F9     &kp F12      &kp INS   &kp DEL        &kp PRINTSCREEN  &kp PAUSE_BREAK  &trans  &trans
-&trans  &trans  &kp F4  &kp F5     &kp F6     &kp F11      &kp HOME  &kp PAGE_DOWN  &kp PG_UP        &kp END          &trans  &trans
-&trans  &trans  &kp F1  &kp F2     &kp F3     &kp F10      &trans    &trans         &trans           &trans           &trans  &trans
-                        &mkp MCLK  &kp LC(Z)  &kp LC(Y)    &trans    &trans
+&trans  &kp LEFT_BRACE        &kp F7  &kp F8     &kp F9     &kp F12      &kp INS   &kp DEL        &kp PRINTSCREEN  &kp PAUSE_BREAK  &kp RIGHT_BRACE        &trans
+&trans  &kp LEFT_PARENTHESIS  &kp F4  &kp F5     &kp F6     &kp F11      &kp HOME  &kp PAGE_DOWN  &kp PG_UP        &kp END          &kp RIGHT_PARENTHESIS  &trans
+&trans  &kp LEFT_BRACKET      &kp F1  &kp F2     &kp F3     &kp F10      &trans    &trans         &trans           &trans           &kp RIGHT_BRACKET      &trans
+                                      &mkp MCLK  &kp LC(Z)  &kp LC(Y)    &trans    &trans
             >;
         };
 
