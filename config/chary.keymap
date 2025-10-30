@@ -357,10 +357,10 @@
 
         DEFAULT {
             bindings = <
-&lt 6 ESCAPE              &kp Q      &kp W  &kp MINUS         &kp R                 &kp Z                      &holdtap LC(X) X  &kp D        &holdtap LG(E) E  &kp L                &kp P                     &holdtap PRINTSCREEN SQT
-&mt LCTRL TAB             &kp I      &kp T  &holdtap LC(A) A  &kp K                 &kp G                      &kp H             &kp N        &kp O             &kp U                &kp S                     &holdtap COLON SEMICOLON
-&mt LEFT_SHIFT LS(LC(M))  &kp SLASH  &kp F  &holdtap LC(C) C  &kp M                 &kp B                      &kp J             &kp Y        &kp V             &holdtap EXCL COMMA  &holdtap QUESTION PERIOD  &arrows 0 0
-                                            &mkp LCLK         &mt LEFT_SHIFT SPACE  &mt LEFT_GUI LANGUAGE_1    &lt_bsdel 5 0     &lt 4 ENTER
+&lt 6 ESCAPE              &kp Q                    &kp W  &kp MINUS         &kp R                 &kp Z                      &holdtap LC(X) X  &kp D        &holdtap LG(E) E  &kp L                &kp P                     &holdtap PRINTSCREEN SQT
+&mt LCTRL TAB             &kp I                    &kp T  &holdtap LC(A) A  &kp K                 &kp G                      &kp H             &kp N        &kp O             &kp U                &kp S                     &holdtap COLON SEMICOLON
+&mt LEFT_SHIFT LS(LC(M))  &holdtap LEFT_ALT SLASH  &kp F  &holdtap LC(C) C  &kp M                 &kp B                      &kp J             &kp Y        &kp V             &holdtap EXCL COMMA  &holdtap QUESTION PERIOD  &arrows 0 0
+                                                          &mkp LCLK         &mt LEFT_SHIFT SPACE  &mt LEFT_GUI LANGUAGE_1    &lt_bsdel 5 0     &lt 4 ENTER
             >;
         };
 
@@ -402,10 +402,10 @@
 
         FUNCTION {
             bindings = <
-&trans  &kp LEFT_BRACE        &kp F7  &kp F8     &kp F9     &kp F12      &kp INS   &kp DEL        &kp PRINTSCREEN  &kp PAUSE_BREAK  &kp RIGHT_BRACE        &trans
-&trans  &kp LEFT_PARENTHESIS  &kp F4  &kp F5     &kp F6     &kp F11      &kp HOME  &kp PAGE_DOWN  &kp PG_UP        &kp END          &kp RIGHT_PARENTHESIS  &trans
-&trans  &kp LEFT_BRACKET      &kp F1  &kp F2     &kp F3     &kp F10      &trans    &trans         &trans           &trans           &kp RIGHT_BRACKET      &trans
-                                      &mkp MCLK  &kp LC(Z)  &kp LC(Y)    &trans    &trans
+&kp KP_NUMLOCK  &kp LEFT_BRACE        &kp F7  &kp F8     &kp F9     &kp F12      &kp INS   &kp DEL        &kp PRINTSCREEN  &kp PAUSE_BREAK  &kp RIGHT_BRACE        &trans
+&kp CAPSLOCK    &kp LEFT_PARENTHESIS  &kp F4  &kp F5     &kp F6     &kp F11      &kp HOME  &kp PAGE_DOWN  &kp PG_UP        &kp END          &kp RIGHT_PARENTHESIS  &trans
+&kp SCROLLLOCK  &kp LEFT_BRACKET      &kp F1  &kp F2     &kp F3     &kp F10      &trans    &trans         &trans           &trans           &kp RIGHT_BRACKET      &trans
+                                              &mkp MCLK  &kp LC(Z)  &kp LC(Y)    &trans    &trans
             >;
         };
 
