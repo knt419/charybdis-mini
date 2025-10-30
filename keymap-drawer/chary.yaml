@@ -26,7 +26,7 @@ layers:
   - S
   - {t: ;, h: ':', s: ':'}
   - {t: '$$mdi:microphone-off$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: /, s: '?'}
+  - {t: /, h: '$$mdi:apple-keyboard-option$$', s: '?'}
   - F
   - {t: C, h: Ctl+C}
   - M
@@ -211,7 +211,7 @@ layers:
   - {t: '$$tabler:fold-down$$', type: trans}
   - {type: held}
   FUNCTION:
-  - {t: '$$tabler:fold-down$$', type: trans}
+  - KP NUMLOCK
   - '{'
   - F7
   - F8
@@ -223,7 +223,7 @@ layers:
   - PAUSE BREAK
   - '}'
   - {t: '$$tabler:fold-down$$', type: trans}
-  - {t: '$$tabler:fold-down$$', type: trans}
+  - $$mdi:apple-keyboard-caps$$
   - (
   - F4
   - F5
@@ -235,7 +235,7 @@ layers:
   - END
   - )
   - {t: '$$tabler:fold-down$$', type: trans}
-  - {t: '$$tabler:fold-down$$', type: trans}
+  - SCROLLLOCK
   - {t: '[', s: '{'}
   - F1
   - F2
