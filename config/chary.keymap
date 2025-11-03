@@ -105,21 +105,15 @@
             layers = <0 1>;
         };
 
-        braces {
-            bindings = <&braces>;
-            key-positions = <2 3>;
-            layers = <0 1>;
-        };
-
         brackets {
             bindings = <&brackets>;
-            key-positions = <26 27>;
+            key-positions = <2 3>;
             layers = <0 1>;
         };
 
         parenthesis {
             bindings = <&parenthesis>;
-            key-positions = <14 15>;
+            key-positions = <26 27>;
             layers = <0 1>;
         };
 
@@ -162,6 +156,12 @@
         forward {
             bindings = <&kp LA(RIGHT)>;
             key-positions = <21 22>;
+            layers = <0 1>;
+        };
+
+        ime_off {
+            bindings = <&kp LANGUAGE_2>;
+            key-positions = <14 15>;
             layers = <0 1>;
         };
     };
