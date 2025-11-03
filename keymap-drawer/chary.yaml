@@ -302,12 +302,9 @@ combos:
   k: '&winmvleft'
   l: [DEFAULT, MOUSE]
 - p: [2, 3]
-  k: '{}'
-  l: [DEFAULT, MOUSE]
-- p: [26, 27]
   k: '[]'
   l: [DEFAULT, MOUSE]
-- p: [14, 15]
+- p: [26, 27]
   k: ()
   l: [DEFAULT, MOUSE]
 - p: [8, 9]
@@ -330,4 +327,7 @@ combos:
   l: [DEFAULT, MOUSE]
 - p: [21, 22]
   k: Alt+$$mdi:arrow-right-bold$$
+  l: [DEFAULT, MOUSE]
+- p: [14, 15]
+  k: LANGUAGE 2
   l: [DEFAULT, MOUSE]
