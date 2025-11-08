@@ -117,12 +117,6 @@
             layers = <0 1>;
         };
 
-        jis_ime_togle {
-            bindings = <&kp LA(GRAVE)>;
-            key-positions = <8 9>;
-            layers = <0 1>;
-        };
-
         find {
             bindings = <&kp LC(F)>;
             key-positions = <25 26>;
@@ -142,7 +136,7 @@
         };
 
         ime_onoff {
-            bindings = <&holdtap LANGUAGE_2 LANGUAGE_1>;
+            bindings = <&holdtap LA(GRAVE) LANGUAGE_1>;
             key-positions = <20 21>;
             layers = <0 1>;
         };
