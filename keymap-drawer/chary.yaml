@@ -309,9 +309,6 @@ combos:
   k: ()
   l: [DEFAULT, MOUSE]
   draw_separate: true
-- p: [8, 9]
-  k: Alt+`
-  l: [DEFAULT, MOUSE]
 - p: [25, 26]
   k: Ctl+F
   l: [DEFAULT, MOUSE]
@@ -322,7 +319,7 @@ combos:
   k: '&DBLSFT'
   l: [DEFAULT, MOUSE]
 - p: [20, 21]
-  k: {t: LANGUAGE 1, h: LANGUAGE 2}
+  k: {t: LANGUAGE 1, h: Alt+`}
   l: [DEFAULT, MOUSE]
 - p: [13, 14]
   k: Alt+$$mdi:arrow-left-bold$$
