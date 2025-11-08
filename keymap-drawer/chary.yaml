@@ -248,8 +248,8 @@ layers:
   - {t: ']', s: '}'}
   - {t: '$$tabler:fold-down$$', type: trans}
   - $$mdi:mouse-scroll-wheel$$
-  - Ctl+Z
-  - Ctl+Y
+  - $$mdi:undo$$
+  - $$mdi:redo$$
   - {type: held}
   - {t: '$$tabler:fold-down$$', type: trans}
   SYSTEM:
