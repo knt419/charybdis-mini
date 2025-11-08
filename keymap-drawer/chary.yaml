@@ -301,10 +301,10 @@ combos:
 - p: [1, 2]
   k: '&winmvleft'
   l: [DEFAULT, MOUSE]
-- p: [2, 3]
+- p: [25, 34]
   k: '[]'
   l: [DEFAULT, MOUSE]
-- p: [26, 27]
+- p: [13, 22]
   k: ()
   l: [DEFAULT, MOUSE]
 - p: [8, 9]
@@ -330,4 +330,7 @@ combos:
   l: [DEFAULT, MOUSE]
 - p: [14, 15]
   k: LANGUAGE 2
+  l: [DEFAULT, MOUSE]
+- p: [1, 10]
+  k: '{}'
   l: [DEFAULT, MOUSE]
