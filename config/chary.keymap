@@ -170,6 +170,18 @@
             key-positions = <1 10>;
             layers = <0 1>;
         };
+
+        undo {
+            bindings = <&kp LC(Z)>;
+            key-positions = <26 27>;
+            layers = <0 1>;
+        };
+
+        redo {
+            bindings = <&kp LC(Y)>;
+            key-positions = <32 33>;
+            layers = <0 1>;
+        };
     };
 
     macros {
