@@ -304,9 +304,11 @@ combos:
 - p: [25, 34]
   k: '[]'
   l: [DEFAULT, MOUSE]
+  draw_separate: true
 - p: [13, 22]
   k: ()
   l: [DEFAULT, MOUSE]
+  draw_separate: true
 - p: [8, 9]
   k: Alt+`
   l: [DEFAULT, MOUSE]
@@ -334,3 +336,4 @@ combos:
 - p: [1, 10]
   k: '{}'
   l: [DEFAULT, MOUSE]
+  draw_separate: true
