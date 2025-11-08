@@ -165,7 +165,7 @@
             layers = <0 1>;
         };
 
-        brace {
+        braces {
             bindings = <&braces>;
             key-positions = <1 10>;
             layers = <0 1>;
