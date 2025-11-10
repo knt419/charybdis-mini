@@ -176,6 +176,12 @@
             key-positions = <32 33>;
             layers = <0 1>;
         };
+
+        taskview {
+            bindings = <&kp LG(TAB)>;
+            key-positions = <19 20>;
+            layers = <4>;
+        };
     };
 
     macros {
@@ -371,7 +377,7 @@
             bindings = <
 &lt 6 ESCAPE              &kp Q      &kp W  &kp MINUS         &kp R                 &kp Z                      &holdtap LC(X) X  &kp D        &holdtap LG(E) E  &kp L                &kp P                     &holdtap PRINTSCREEN SQT
 &mt LCTRL TAB             &kp I      &kp T  &holdtap LC(A) A  &kp K                 &kp G                      &kp H             &kp N        &kp O             &kp U                &kp S                     &mt RIGHT_ALT SEMICOLON
-&mt LEFT_SHIFT LS(LC(M))  &kp SLASH  &kp F  &holdtap LC(C) C  &kp M                 &kp B                      &kp J             &kp Y        &kp V             &holdtap EXCL COMMA  &holdtap QUESTION PERIOD  &arrows 0 0
+&mt LEFT_SHIFT LS(LC(M))  &kp SLASH  &kp F  &holdtap LC(C) C  &kp M                 &kp B                      &kp J             &kp Y        &kp V             &holdtap EXCL COMMA  &holdtap QUESTION PERIOD  &kp BACKSLASH
                                             &mkp LCLK         &mt LEFT_SHIFT SPACE  &mt LEFT_GUI LANGUAGE_1    &lt_bsdel 5 0     &lt 4 ENTER
             >;
         };
