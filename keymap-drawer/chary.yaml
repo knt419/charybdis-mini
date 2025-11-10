@@ -36,7 +36,7 @@ layers:
   - V
   - {t: ',', h: '!', s: <}
   - {t: ., h: '?'}
-  - {t: '&right_arrow', h: '&down_arrow', s: '&left_arrow'}
+  - {t: \, s: '|'}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: LANGUAGE 1, h: '$$mdi:apple-keyboard-command$$'}
@@ -340,3 +340,6 @@ combos:
 - p: [32, 33]
   k: $$mdi:redo$$
   l: [DEFAULT, MOUSE]
+- p: [19, 20]
+  k: $$mdi:view-dashboard-outline$$
+  l: [NUMBER]
